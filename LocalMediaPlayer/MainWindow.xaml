@@ -1,0 +1,31 @@
+﻿<NavigationWindow x:Class="LocalMediaPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LocalMediaPlayer"
+        mc:Ignorable="d"
+        Title="本地媒体播放器"
+        WindowState="Maximized">
+    <NavigationWindow.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition/>
+                <RowDefinition Height="180"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" Grid.Row="0">
+                <ComboBox ToolTip="文件" x:Name="FileComboBox" SelectionChanged="FileComboBox_SelectionChanged">
+                    <ComboBoxItem Content="打开"/>
+                    <ComboBoxItem Content="播放列表"/>
+                    <ComboBoxItem Content="退出"/>
+                </ComboBox>
+                <Label ToolTip="文件名" x:Name="FileNameLabel"/>
+            </StackPanel>
+            <Rectangle Grid.Row="1" Fill="Black"/>
+            <MediaElement Grid.Row="1" x:Name="theMediaPlayer" LoadedBehavior="Manual" UnloadedBehavior="Stop" MediaFailed="MediaPlayer_MediaFailed" MediaEnded="theMediaPlayer_MediaEnded" MediaOpened="theMediaPlayer_MediaOpened">
+            </MediaElement>
+            <local:PlayCtrl VerticalAlignment="Bottom" Grid.Row="2" x:Name="thePlayCtrl" IsEnabled="False"/>
+        </Grid>
+    </NavigationWindow.Content>
+</NavigationWindow>
