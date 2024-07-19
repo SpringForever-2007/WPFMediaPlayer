@@ -1,0 +1,26 @@
+//tasks.json
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C++ build",
+            "type": "cppbuild",
+            "command": "gcc",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-l",
+                "D:\\ffmpeg\\ffmpeg-master-latest-win64-gpl-shared\\include",
+                "-L",
+                "${workspaceFolder}\\dll"
+            ],
+            "problemMatcher": ["$rustc"]
+        }
+    ]
+}
