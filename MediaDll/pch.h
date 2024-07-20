@@ -9,6 +9,9 @@
 
 // 添加要在此处预编译的标头
 #include "framework.h"
-#include <mfapi.h>
-#include <mfidl.h>
+#include <exception>
+
+#define HRESULT long
+#define STDMETHODTMP HRESULT _stdcall
+
 #endif //PCH_H

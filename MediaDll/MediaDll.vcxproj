@@ -139,11 +139,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AddBranchToPartialTopology.h" />
+    <ClInclude Include="CreateMediaSource.h" />
+    <ClInclude Include="CreatePlaybackTopology.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="MainWin.h" />
+    <ClInclude Include="MediaPlayer.h" />
+    <ClInclude Include="MFException.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="PlayState.h" />
+    <ClInclude Include="SafeRelease.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="MediaPlayer.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

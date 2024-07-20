@@ -21,12 +21,39 @@
     <ClInclude Include="pch.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="MediaPlayer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MFException.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayState.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SafeRelease.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateMediaSource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CreatePlaybackTopology.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AddBranchToPartialTopology.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaPlayer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
