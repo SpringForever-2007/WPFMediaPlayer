@@ -26,7 +26,8 @@ namespace LocalMediaPlayer
         EndChangePosition,
         SoundChanged,
         MediaSpeedChanged,
-        Edit
+        Edit,
+        OpenFromList
     }
 
     public enum MediaSpeed

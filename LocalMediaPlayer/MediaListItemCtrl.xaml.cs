@@ -24,5 +24,24 @@ namespace LocalMediaPlayer
         {
             InitializeComponent();
         }
+
+        public string FileName
+        {
+            get => (string)FileNameLabel.Content;
+            set => FileNameLabel.Content = value;
+        }
+
+        public string VideoDateTimeStr
+        {
+            get => (string)VideoDateTimeLabel.Content;
+            set => VideoDateTimeLabel.Content = value;
+        }
+
+        private void UserControl_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            Event?.Invoke(this, new(PlayEvent.OpenFromList, FileName));
+        }
+
+        public ControlPlayEvent? Event;
     }
 }

@@ -10,55 +10,6 @@ using System.Windows.Threading;
 
 namespace LocalMediaPlayer
 {
-    public class MediaListItem
-    {
-        public MediaListItem(string fileName)
-        {
-            __VideoFirstImage = new();
-            __Ctrl = new();
-            FileName = fileName;
-        }
-
-        public string FileName
-        {
-            get => __FileName;
-            set
-            {
-                __FileName=value;
-                __VideoDateTime = GetNowDateTimeStr();
-            }
-        }
-
-        public Image VideoFirstImage
-        {
-            get => __VideoFirstImage;
-        }
-
-        public string DateTime
-        {
-            get => __VideoDateTime;
-        }
-
-        public bool IsCheck
-        {
-            get => (bool)__Ctrl.ChooseCheckBox.IsChecked;
-        }
-
-        private string __FileName;
-        private Image __VideoFirstImage;
-        private string __VideoDateTime;
-        private MediaListItemCtrl __Ctrl;
-        private string GetNowDateTimeStr()
-        {
-            DateTime dt = new();
-            string str;
-            str=string.Format("{0:D4}/{1:D2}/{2:D2} {3:D2}:{4:D2}:{5:D2}",
-                dt.Year,dt.Month,dt.Day,dt.Hour,dt.Minute,dt.Second);
-            return str;
-        }
-    }
-
-
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
