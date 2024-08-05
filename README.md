@@ -14,5 +14,9 @@
         <td>LocalMediaPlayer</td>
         <td>WPF本地媒体播放器</td>
     </tr>
+    <tr>
+      <td>SteemMediaPlayer</td>
+      <td>WPF流媒体播放器</td>
+    </tr>
   </table>
 </body>
