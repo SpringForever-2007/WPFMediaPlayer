@@ -21,9 +21,8 @@ namespace LocalMediaPlayer
             {
                 InitializeComponent();
                 thePlayCtrl.Event += DealEvent;
-                string icopath = Path.GetFullPath("..\\..\\..\\NewMedia.ico");
-                Icon = BitmapFrame.Create(new Uri(icopath));
-                __Page = new();
+                __Page = new(this);
+                __Page.Load();
             }
             catch(Exception ex)
             {
@@ -60,8 +59,7 @@ namespace LocalMediaPlayer
                 case PlayEvent.Edit:
                     {
                         Process ps = new();
-                        ps.StartInfo.FileName = "mediaplayer";
-                        ps.StartInfo.Arguments = theMediaPlayer.Source.ToString();
+                        ps.StartInfo.FileName = theMediaPlayer.Source.LocalPath;
                         ps.Start();
                         break;
                     }
@@ -87,12 +85,8 @@ namespace LocalMediaPlayer
                         dlg.Multiselect = false;
                         if ((bool)dlg.ShowDialog())
                         {
-                            string videopath = dlg.FileName;
-                            Uri uri = new(videopath);
-                            theMediaPlayer.Source = uri;
-                            theMediaPlayer.Play();
-                            FileNameLabel.Content = Path.GetFileName(dlg.FileName);
-                            __LocalFilePath = Path.GetDirectoryName(dlg.FileName);
+                            OpenUrl(dlg.FileName);
+                            AddToList();
                         }
                         break;
                     }
@@ -103,7 +97,7 @@ namespace LocalMediaPlayer
                     }
                 case (int)FileComboBoxItem.Ezit:
                     {
-                        Environment.Exit(0);
+                        Close();
                         break;
                     }
             }
@@ -132,7 +126,62 @@ namespace LocalMediaPlayer
             thePlayCtrl.IsPlaying = true;
         }
 
+        private void AddToList()
+        {
+            foreach(MediaListItem it in __Page.MediaList)
+            {
+                if (theMediaPlayer.Source.LocalPath == it.FileName)
+                    return;
+            }
+
+            __Page.AddItem(theMediaPlayer.Source.LocalPath);
+        }
+
+        public void OpenUrl(string videopath)
+        {
+            Uri uri = new(videopath);
+            theMediaPlayer.Source = uri;
+            theMediaPlayer.Play();
+            FileNameLabel.Content = Path.GetFileName(videopath);
+            __LocalFilePath = Path.GetDirectoryName(videopath);
+        }
+
         private string __LocalFilePath = Environment.GetFolderPath(Environment.SpecialFolder.MyVideos);
         private PlayListPage __Page;
+
+        private void NavigationWindow_Closed(object sender, EventArgs e)
+        {
+            __Page.Save();
+        }
+
+        ~MainWindow()
+        {
+            __Page.Save();
+        }
+
+        private void theMediaPlayer_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            if(thePlayCtrl.IsEnabled)
+            {
+                thePlayCtrl.PlayOrPause();
+            }
+        }
+
+        private void NavigationWindow_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            switch(e.Key)
+            {
+                case System.Windows.Input.Key.Space:
+                    thePlayCtrl.PlayOrPause();
+                    break;
+                case System.Windows.Input.Key.Left:
+                    thePlayCtrl.BackOrFront(true);
+                    break;
+                case System.Windows.Input.Key.Right:
+                    thePlayCtrl.BackOrFront(false);
+                    break;
+                default:break;
+            }
+        }
     }
 }

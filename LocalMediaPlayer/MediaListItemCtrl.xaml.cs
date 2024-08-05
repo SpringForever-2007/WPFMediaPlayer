@@ -39,9 +39,14 @@ namespace LocalMediaPlayer
 
         private void UserControl_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            Event?.Invoke(this, new(PlayEvent.OpenFromList, FileName));
+            MainWnd.OpenUrl(FileName);
+            MainWnd.GoBack();
         }
 
-        public ControlPlayEvent? Event;
+        static public MainWindow MainWnd
+        {
+            get;
+            set;
+        }
     }
 }

@@ -21,32 +21,31 @@ namespace LocalMediaPlayer
     /// </summary>
     public partial class PlayListPage : Page
     {
-        public PlayListPage()
+        public PlayListPage(MainWindow wnd)
         {
             InitializeComponent();
-            __MediaList = new();
+            MediaList = new();
+            ParentWnd = wnd;
+            MediaListItemCtrl.MainWnd = ParentWnd;
         }
 
         public void Load()
         {
             try
             {
-                using (XmlReader rd = XmlReader.Create("..\\..\\..\\PlayListData.xml"))
+                using (XmlReader rd = XmlReader.Create(".\\PlayListData.xml"))
                 {
                     rd.ReadStartElement("PlayList");
-                    int num = int.Parse(rd.GetAttribute("Number"));
                     string fn, dt;
                     while(rd.Read())
                     {
                         if(rd.IsStartElement("ListItem"))
                         {
-                            num--;
-                            fn = rd.GetAttribute("FileName");
-                            dt = rd.GetAttribute("VidepDateTime");
+                            fn = rd.GetAttribute(0);
+                            dt = rd.GetAttribute(1);
                             AddItem(fn, dt);
                         }
                     }
-                    rd.ReadEndElement();
                 }
             }
             catch(Exception e)
@@ -66,19 +65,18 @@ namespace LocalMediaPlayer
                 settings.NewLineChars = ("\n");
                 settings.NewLineHandling = NewLineHandling.Replace;
 
-                using (XmlWriter wrt = XmlWriter.Create("..\\..\\..\\PlayListData.xml",settings))
+                using (XmlWriter wrt = XmlWriter.Create(".\\PlayListData.xml",settings))
                 {
                     wrt.WriteStartDocument();
                     wrt.WriteStartElement("PlayList");
-                    wrt.WriteAttributeString("Number", __MediaList.Count.ToString());
-                    foreach(MediaListItem it in __MediaList)
+                    wrt.WriteAttributeString("Number", MediaList.Count.ToString());
+                    foreach(MediaListItem it in MediaList)
                     {
                         wrt.WriteStartElement("ListItem");
                         wrt.WriteAttributeString("FileName", it.FileName);
                         wrt.WriteAttributeString("VideoDateTime", it.DateTime);
                         wrt.WriteEndElement();
                     }
-                    wrt.WriteEndElement();
                     wrt.WriteEndDocument();
                 }
             }
@@ -92,17 +90,29 @@ namespace LocalMediaPlayer
         public void AddItem(string uri)
         {
             MediaListItemCtrl ctrl = new();
-            __MediaList.Add(new(uri, ctrl));
+            MediaList.Add(new(uri, ctrl));
             MediaListStackPanel.Children.Add(ctrl);
+        }
+
+        private void PlayListItem_Event(object sender, ControlPlayEventHandleArgs e)
+        {
+            ParentWnd.Navigate(ParentWnd);
+            ParentWnd.OpenUrl((string)e.Param);
         }
 
         private void AddItem(string uri,string videodatetime)
         {
             MediaListItemCtrl ctrl = new();
-            __MediaList.Add(new(uri,videodatetime, ctrl));
+            MediaList.Add(new(uri,videodatetime, ctrl));
             MediaListStackPanel.Children.Add(ctrl);
         }
 
-        private List<MediaListItem> __MediaList;
+        public List<MediaListItem> MediaList;
+        private MainWindow ParentWnd;
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MediaListItemCtrl.MainWnd.GoBack();
+        }
     }
 }

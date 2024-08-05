@@ -1,25 +1,70 @@
 <!DOCTYPE HTML>
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
 </head>
 <body>
-  <h1>LocalMediaPlayer</h1>
-  <p>
-    LocalMediaPlayer是WPF一个本地
-    媒体播放器项目，以下是文件列表：  </p>
- <table>
-  <tr>
-   <th>文件名</th>
-    <th>说明</th>
-    <th>相对路径</th>
-  </tr>
-  <tr>
-   <td>App.xaml</td>
-   <td>包含App资源等内容，对应App.xaml.cs文件</td>
-  </tr>
-  <tr>
-   <td>App.xaml.cs</td>
-   <td>包含App类的定义，同时是程序的入口，对应App.xaml文件</td>
-   </tr>  
-  </table>
+    <h1>LocalMediaPlayer</h1>
+    <h2>概述</h2>
+    <p>
+        LocalMediaPlayer是WPF一个本地
+        媒体播放器项目，以下是文件列表：
+    </p>
+    <table>
+        <tr>
+            <th>文件名</th>
+            <th>说明</th>
+        </tr>
+        <tr>
+            <td>App.xaml</td>
+            <td>包含App资源等内容，对应App.xaml.cs文件</td>
+        </tr>
+        <tr>
+            <td>App.xaml.cs</td>
+            <td>包含App类的定义，同时是程序的入口，对应App.xaml文件</td>
+        </tr>
+        <tr>
+            <td>AssemblyInfo.cs</td>
+            <td>包含与应用主题相关的内容</td>
+        </tr>
+        <tr>
+            <td>MainWindow.xaml</td>
+            <td>包含主窗口的用户界面，对应MainWindow.xaml.ce文件</td>
+        </tr>
+        <tr>
+            <td>MainWindow.xaml.cs</td>
+            <td>包含MainWindow类的定义，对应MainWindow.xaml文件</td>
+        </tr>
+        <tr>
+            <td>MediaListItem.cs</td>
+            <td>包含媒体播放列表项MediaListItem类的定义，用于PlayListPage</td>
+        </tr>
+        <tr>
+            <td>MediaListItemCtrl.xaml</td>
+            <td>包含媒体播放列表项的控件组合，对于MediaListItemCtrl.xaml.cs文件，用于MediaListItem</td>
+        </tr>
+        <tr>
+            <td>PlayCtrl.xaml</td>
+            <td>包含播放控制控件组合，对应PlayCtrl.xaml.cs文件，用于MainWindow</td>
+        </tr>
+        <tr>
+            <td>PlayCtrl.xaml.cs</td>
+            <td>包含PlayCtrl类的定义，对应PlayCtrl.xaml文件</td>
+        </tr>
+        <tr>
+            <td>PlayListData.xml</td>
+            <td>包含播放列表的数据，用于PlayListPage</td>
+        </tr>
+        <tr>
+            <td>PlayListPage.xaml</td>
+            <td>包含播放列表页面的用户界面，对应PlayListPage.xaml.cs文件</td>
+        </tr>
+        <tr>
+            <td>PlayListPage.xaml.cs</td>
+            <td>包含PlayListPage类的定义，对应PlayListPage.xaml文件，用于MainWindow</td>
+        </tr>
+    </table>
+    <h2>应用流程</h2>
+    <p>
+
+    </p>
 </body>

@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:LocalMediaPlayer"
         mc:Ignorable="d"
         Title="本地媒体播放器"
-        WindowState="Maximized">
+        WindowState="Maximized"
+        ShowsNavigationUI="False"
+        Closed="NavigationWindow_Closed" KeyDown="NavigationWindow_KeyDown">
     <NavigationWindow.Content>
         <Grid>
             <Grid.RowDefinitions>
@@ -23,7 +25,9 @@
                 <Label ToolTip="文件名" x:Name="FileNameLabel"/>
             </StackPanel>
             <Rectangle Grid.Row="1" Fill="Black"/>
-            <MediaElement Grid.Row="1" x:Name="theMediaPlayer" LoadedBehavior="Manual" UnloadedBehavior="Stop" MediaFailed="MediaPlayer_MediaFailed" MediaEnded="theMediaPlayer_MediaEnded" MediaOpened="theMediaPlayer_MediaOpened">
+            <MediaElement Grid.Row="1" x:Name="theMediaPlayer" LoadedBehavior="Manual" UnloadedBehavior="Stop" 
+                          MediaFailed="MediaPlayer_MediaFailed" MediaEnded="theMediaPlayer_MediaEnded" 
+                          MediaOpened="theMediaPlayer_MediaOpened" MouseDown="theMediaPlayer_MouseDown">
             </MediaElement>
             <local:PlayCtrl VerticalAlignment="Bottom" Grid.Row="2" x:Name="thePlayCtrl" IsEnabled="False"/>
         </Grid>

@@ -5,6 +5,10 @@ VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocalMediaPlayer", "LocalMediaPlayer\LocalMediaPlayer.csproj", "{D5121FB2-8432-4C92-8AEA-4DE0C95C24C6}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteemMediaPlayer", "SteemMediaPlayer\SteemMediaPlayer.csproj", "{A9907AE3-2BBB-4F4E-9BAC-76CC535D95D1}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupSteemMediaPlayerProject", "SetupSteemMediaPlayerProject\SetupSteemMediaPlayerProject.vdproj", "{CC1FA91D-ED54-4696-8EAA-E6C4008170A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,24 @@ Global
 		{D5121FB2-8432-4C92-8AEA-4DE0C95C24C6}.Release|x64.Build.0 = Release|Any CPU
 		{D5121FB2-8432-4C92-8AEA-4DE0C95C24C6}.Release|x86.ActiveCfg = Release|Any CPU
 		{D5121FB2-8432-4C92-8AEA-4DE0C95C24C6}.Release|x86.Build.0 = Release|Any CPU
+		{A9907AE3-2BBB-4F4E-9BAC-76CC535D95D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9907AE3-2BBB-4F4E-9BAC-76CC535D95D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9907AE3-2BBB-4F4E-9BAC-76CC535D95D1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A9907AE3-2BBB-4F4E-9BAC-76CC535D95D1}.Debug|x64.Build.0 = Debug|Any CPU
+		{A9907AE3-2BBB-4F4E-9BAC-76CC535D95D1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A9907AE3-2BBB-4F4E-9BAC-76CC535D95D1}.Debug|x86.Build.0 = Debug|Any CPU
+		{A9907AE3-2BBB-4F4E-9BAC-76CC535D95D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9907AE3-2BBB-4F4E-9BAC-76CC535D95D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9907AE3-2BBB-4F4E-9BAC-76CC535D95D1}.Release|x64.ActiveCfg = Release|Any CPU
+		{A9907AE3-2BBB-4F4E-9BAC-76CC535D95D1}.Release|x64.Build.0 = Release|Any CPU
+		{A9907AE3-2BBB-4F4E-9BAC-76CC535D95D1}.Release|x86.ActiveCfg = Release|Any CPU
+		{A9907AE3-2BBB-4F4E-9BAC-76CC535D95D1}.Release|x86.Build.0 = Release|Any CPU
+		{CC1FA91D-ED54-4696-8EAA-E6C4008170A9}.Debug|Any CPU.ActiveCfg = Debug
+		{CC1FA91D-ED54-4696-8EAA-E6C4008170A9}.Debug|x64.ActiveCfg = Debug
+		{CC1FA91D-ED54-4696-8EAA-E6C4008170A9}.Debug|x86.ActiveCfg = Debug
+		{CC1FA91D-ED54-4696-8EAA-E6C4008170A9}.Release|Any CPU.ActiveCfg = Release
+		{CC1FA91D-ED54-4696-8EAA-E6C4008170A9}.Release|x64.ActiveCfg = Release
+		{CC1FA91D-ED54-4696-8EAA-E6C4008170A9}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

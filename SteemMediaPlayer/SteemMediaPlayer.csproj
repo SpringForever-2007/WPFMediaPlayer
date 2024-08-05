@@ -6,17 +6,15 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon>LocalMediaPlayer.ico</ApplicationIcon>
+    <ApplicationIcon>SteemMediaPlayer.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="LocalMediaPlayer.ico" />
+    <Content Include="SteemMediaPlayer.ico" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="NewMedia.ico">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </None>
+    <Folder Include="bin\Release\net8.0-windows\" />
   </ItemGroup>
 
 </Project>

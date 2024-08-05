@@ -155,18 +155,12 @@ namespace LocalMediaPlayer
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            if(__Position.TotalSeconds < 30)
-                Position = TimeSpan.Zero;
-            else Position = __Position - new TimeSpan(0, 0, 30);
-            Event?.Invoke(this, new(PlayEvent.PositionChanged, Position));
+            BackOrFront(true);
         }
 
         private void FrontButton_Click(object sender, RoutedEventArgs e)
         {
-            if(__Position.TotalSeconds+30>__NaturalDuration.TotalSeconds)
-                Position = __NaturalDuration;
-            else Position = __Position + new TimeSpan(0, 0, 30);
-            Event?.Invoke(this, new(PlayEvent.PositionChanged, Position));
+            BackOrFront(false);
         }
 
         private void PositionSlider_GotFocus(object sender, RoutedEventArgs e)
@@ -201,6 +195,34 @@ namespace LocalMediaPlayer
         private void OpenEditorMeniItem_Click(object sender, RoutedEventArgs e)
         {
             Event?.Invoke(this, new(PlayEvent.Edit, this));
+        }
+
+        public void BackOrFront(bool IsBack)
+        {
+            if(IsBack)
+            {
+                if (__Position.TotalSeconds < 30)
+                    Position = TimeSpan.Zero;
+                else Position = __Position - new TimeSpan(0, 0, 30);
+                Event?.Invoke(this, new(PlayEvent.PositionChanged, Position));
+            }
+            else
+            {
+                if (__Position.TotalSeconds + 30 > __NaturalDuration.TotalSeconds)
+                    Position = __NaturalDuration;
+                else Position = __Position + new TimeSpan(0, 0, 30);
+                Event?.Invoke(this, new(PlayEvent.PositionChanged, Position));
+            }
+        }
+
+        public void PlayOrPause()
+        {
+            IsPlaying = !IsPlaying;
+            PlayEvent en;
+            if (__IsPlaying)
+                en = PlayEvent.Play;
+            else en = PlayEvent.Pause;
+            Event?.Invoke(this, new ControlPlayEventHandleArgs(en, __IsPlaying));
         }
     }
 }
