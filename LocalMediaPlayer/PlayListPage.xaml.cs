@@ -114,5 +114,17 @@ namespace LocalMediaPlayer
         {
             MediaListItemCtrl.MainWnd.GoBack();
         }
+
+        private void OperatorComboBox_Click(object sender, RoutedEventArgs e)
+        {
+            for(int i=0;i<MediaList.Count;i++)
+            {
+                if (MediaList[i].IsCheck)
+                {
+                    MediaListStackPanel.Children.Remove(MediaList[i].Ctrl);
+                    MediaList.Remove(MediaList[i]);
+                }
+            }
+        }
     }
 }

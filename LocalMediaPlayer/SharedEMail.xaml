@@ -1,0 +1,54 @@
+﻿<Page x:Class="LocalMediaPlayer.SharedEMail"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LocalMediaPlayer"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="以邮件方式发送">
+    <Page.DataContext>
+        <local:SharedEMailViewModel x:Name="Model"/>
+    </Page.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <!--用户e-mail address-->
+            <RowDefinition Height="40"/>
+            <!--用户e-mail password-->
+            <RowDefinition Height="40"/>
+            <!--接收方e-mail address-->
+            <RowDefinition Height="40"/>
+            <!--标题-->
+            <RowDefinition Height="40"/>
+            <!--附件-->
+            <RowDefinition/>
+            <!--正文-->
+            <RowDefinition Height="40"/>
+            <!--状态栏-->
+            <RowDefinition Height="40"/>
+            <!--按钮-->
+        </Grid.RowDefinitions>
+        <Label Content="你的邮箱地址：" Grid.Row="0" Grid.Column="0" Margin="5,5,5,5"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Margin="5,5,5,5" Text="{Binding UserEMailAddress}"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="你的邮箱密码：" Margin="5,5,5,5"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="5,5,5,5" Text="{Binding UserEMailPassword}"/>
+        <Label Content="接收方邮箱地址：" Grid.Row="2" Grid.Column="0" Margin="5,5,5,5"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Margin="5,5,5,5" Text="{Binding OtherEMailAddress}"/>
+        <Label Content="邮件标题：" Grid.Row="3" Grid.Column="0" Margin="5,5,5,5"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Margin="5,5,5,5" Text="{Binding Title}"/>
+        <Label Content="附件（当前视频文件）" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,5,5,5"/>
+        <TextBox Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" VerticalAlignment="Stretch" Margin="5,5,5,5" FontSize="20" AcceptsReturn="True" Text="{Binding Body}"/>
+        <StatusBar Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2">
+            
+        </StatusBar>
+        <StackPanel Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" FlowDirection="RightToLeft">
+            <Button Content="取消" HorizontalAlignment="Right" Width="120" Margin="10,5,10,5" Click="CancelButton_Click"/>
+            <Button Content="发送" Background="Blue" Foreground="White" Width="120" Margin="10,5,10,5" Click="YesButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

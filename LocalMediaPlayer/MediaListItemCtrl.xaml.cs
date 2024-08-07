@@ -48,5 +48,15 @@ namespace LocalMediaPlayer
             get;
             set;
         }
+
+        private void UserControl_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Background = new SolidColorBrush(Colors.White);
+        }
+
+        private void UserControl_MouseLeave(object sender, MouseEventArgs e)
+        {
+            Background = new SolidColorBrush(Colors.LightBlue);
+        }
     }
 }

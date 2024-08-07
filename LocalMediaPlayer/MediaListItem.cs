@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace LocalMediaPlayer
 {
@@ -42,6 +43,11 @@ namespace LocalMediaPlayer
         public bool IsCheck
         {
             get => (bool)__Ctrl.ChooseCheckBox.IsChecked;
+        }
+
+        public UserControl Ctrl
+        {
+            get => __Ctrl;
         }
 
         private string __FileName = "";

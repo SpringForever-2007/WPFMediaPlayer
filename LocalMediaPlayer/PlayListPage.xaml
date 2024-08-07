@@ -6,7 +6,8 @@
       xmlns:local="clr-namespace:LocalMediaPlayer"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PlayListPage">
+      Title="PlayListPage"
+      Background="LightGray">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -19,10 +20,13 @@
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
             <Button Content="返回" Height="30" Width="60" Click="Button_Click"/>
-            <Label Margin="10,0,0,0"/>
+            <Label Margin="10,0,0,0" Content="{Binding ElementName=MediaListStackPanel, Path=Children.Count}"/>
+            <Label Content="个项目"/>
         </StackPanel>
-        <ComboBox Grid.Row="0" Grid.Column="1" x:Name="OperatorComboBox"/>
-        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" x:Name="MediaListStackPanel">
-        </StackPanel>
+        <Button Grid.Row="0" Grid.Column="1" x:Name="OperatorComboBox" Content="删除" Click="OperatorComboBox_Click"/>
+        <ScrollViewer Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" >
+            <StackPanel Orientation="Vertical" x:Name="MediaListStackPanel">
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>

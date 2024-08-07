@@ -6,11 +6,13 @@
              xmlns:local="clr-namespace:LocalMediaPlayer"
              mc:Ignorable="d" 
              d:DesignHeight="100" d:DesignWidth="800"
-             MouseDoubleClick="UserControl_MouseDoubleClick" Background="#FFB1DEE5" BorderBrush="Black"
-             Margin="5,5,5,5">
+             MouseDoubleClick="UserControl_MouseDoubleClick" Background="LightBlue" BorderBrush="Black"
+             Margin="5,5,5,5"
+             MouseEnter="UserControl_MouseEnter"
+             MouseLeave="UserControl_MouseLeave">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition Width="40"/>
         </Grid.ColumnDefinitions>
@@ -18,7 +20,7 @@
             <RowDefinition Height="60"/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
-        <Label Grid.Row="0" Grid.Column="0" x:Name="FileNameLabel"/>
+        <Label Grid.Row="0" Grid.Column="0" x:Name="FileNameLabel" FontSize="36"/>
         <Label Grid.Row="1" Grid.Column="0" x:Name="VideoDateTimeLabel"/>
         <CheckBox Grid.Row="1" Grid.Column="2" Margin="0,0,5,0" x:Name="ChooseCheckBox"/>
     </Grid>

@@ -1,18 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Windows.Threading;
 
 namespace LocalMediaPlayer
@@ -27,7 +14,10 @@ namespace LocalMediaPlayer
         SoundChanged,
         MediaSpeedChanged,
         Edit,
-        OpenFromList
+        OpenFromList,
+        SharedToLocal,
+        SharedByNet,
+        SharedToEMail
     }
 
     public enum MediaSpeed
@@ -223,6 +213,32 @@ namespace LocalMediaPlayer
                 en = PlayEvent.Play;
             else en = PlayEvent.Pause;
             Event?.Invoke(this, new ControlPlayEventHandleArgs(en, __IsPlaying));
+        }
+
+        private void SharedToLocalMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Event?.Invoke(this, new(PlayEvent.SharedToLocal, this));
+        }
+
+        private void SharedByNetMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Event?.Invoke(this, new(PlayEvent.SharedByNet, this));
+        }
+
+        public void UnEnable()
+        {
+            __IsPlaying = false;
+            __NaturalDuration=TimeSpan.Zero;
+            PlayButton.Template = (ControlTemplate)Resources["roundbutton2playing"];
+            PlayButton.ToolTip = "播放";
+            SoundSlider.Value = 0;
+            PositionSlider.Value = 0;
+            IsEnabled = false;
+        }
+
+        private void SharedToEMailMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Event?.Invoke(this, new(PlayEvent.SharedToEMail, this));
         }
     }
 }

@@ -84,8 +84,12 @@
                     <MenuItem Header="1.5" Click="Speed_MenuItem_Click"/>
                     <MenuItem Header="2.0" Click="Speed_MenuItem_Click"/>
                 </MenuItem>
-                <MenuItem Header="使用LocalMediaEditor打开" Background="White" x:Name="OpenEditorMenuItem" Click="OpenEditorMeniItem_Click"/>
-                <MenuItem Header="分享" Background="White"/>
+                <MenuItem Header="使用编辑器打开" Background="White" x:Name="OpenEditorMenuItem" Click="OpenEditorMeniItem_Click"/>
+                <MenuItem Header="分享" Background="White">
+                    <MenuItem Header="到本地" Click="SharedToLocalMenuItem_Click"/>
+                    <MenuItem Header="网络分享" Click="SharedByNetMenuItem_Click"/>
+                    <MenuItem Header="到邮件" Click="SharedToEMailMenuItem_Click"/>
+                </MenuItem>
             </MenuItem>
         </Menu>
         <Label Grid.Column="4" Grid.Row="2" Content="音量"/>

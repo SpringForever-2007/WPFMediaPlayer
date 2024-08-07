@@ -3,10 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Markup;
-using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Threading;
 
 namespace LocalMediaPlayer
 {
@@ -63,6 +60,37 @@ namespace LocalMediaPlayer
                         ps.Start();
                         break;
                     }
+                case PlayEvent.SharedToLocal:
+                    {
+                        SaveFileDialog dlg = new();
+                        dlg.Filter = "视频文件|*.wmv;*.asf;*.avi;*.mp4;*.m4a;*.m4v;*.mp3;*.wav;*.wma";
+                        dlg.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyVideos);
+                        if ((bool)dlg.ShowDialog())
+                        {
+                            string fn = dlg.FileName;
+                            if(fn!=theMediaPlayer.Source.LocalPath)
+                            {
+                                //复制文件
+                                File.Copy(theMediaPlayer.Source.LocalPath,fn);
+                                MessageBox.Show($"{theMediaPlayer.Source.LocalPath}已成功分享到{fn}");
+                            }
+                        }
+                        break;
+                    }
+                case PlayEvent.SharedByNet:
+                    {
+                        SharedNet net = new();
+                        net.fileName= theMediaPlayer.Source.LocalPath;
+                        Stop();
+                        net.ShowDialog();
+                        break;
+                    }
+                case PlayEvent.SharedToEMail:
+                    {
+                        SharedEMail page = new(this,theMediaPlayer.Source.LocalPath);
+                        Navigate(page);
+                        break;
+                    }
             }
         }
 
@@ -70,6 +98,7 @@ namespace LocalMediaPlayer
         {
             OpenFile = 0,
             PlayList,
+            About,
             Ezit
         }
 
@@ -98,6 +127,12 @@ namespace LocalMediaPlayer
                 case (int)FileComboBoxItem.Ezit:
                     {
                         Close();
+                        break;
+                    }
+                case (int)FileComboBoxItem.About:
+                    {
+                        AboutDialog dlg = new();
+                        dlg.ShowDialog();
                         break;
                     }
             }
@@ -144,6 +179,13 @@ namespace LocalMediaPlayer
             theMediaPlayer.Play();
             FileNameLabel.Content = Path.GetFileName(videopath);
             __LocalFilePath = Path.GetDirectoryName(videopath);
+        }
+
+        public void Stop()
+        {
+            theMediaPlayer.Source = null;
+            FileNameLabel.Content = "";
+            thePlayCtrl.UnEnable();
         }
 
         private string __LocalFilePath = Environment.GetFolderPath(Environment.SpecialFolder.MyVideos);
