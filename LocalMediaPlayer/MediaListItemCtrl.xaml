@@ -7,12 +7,23 @@
              mc:Ignorable="d" 
              d:DesignHeight="100" d:DesignWidth="800"
              MouseDoubleClick="UserControl_MouseDoubleClick" Background="LightBlue" BorderBrush="Black"
-             Margin="5,5,5,5"
+             Margin="10,10,10,10"
              MouseEnter="UserControl_MouseEnter"
              MouseLeave="UserControl_MouseLeave">
+    <UserControl.Template>
+        <ControlTemplate TargetType="UserControl">
+            <Border Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    CornerRadius="10">
+                <!-- 设置圆角大小 -->
+                <ContentPresenter Content="{TemplateBinding Content}"/>
+            </Border>
+        </ControlTemplate>
+    </UserControl.Template>
+    
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition Width="40"/>
         </Grid.ColumnDefinitions>
@@ -22,6 +33,10 @@
         </Grid.RowDefinitions>
         <Label Grid.Row="0" Grid.Column="0" x:Name="FileNameLabel" FontSize="36"/>
         <Label Grid.Row="1" Grid.Column="0" x:Name="VideoDateTimeLabel"/>
-        <CheckBox Grid.Row="1" Grid.Column="2" Margin="0,0,5,0" x:Name="ChooseCheckBox"/>
+        <CheckBox Grid.Row="0" Grid.Column="1" x:Name="ChooseCheckBox" 
+                  Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
     </Grid>
+    <UserControl.Effect>
+        <DropShadowEffect Direction="315" Color="Gray"/>
+    </UserControl.Effect>
 </UserControl>

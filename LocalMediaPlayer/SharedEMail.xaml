@@ -29,8 +29,6 @@
             <RowDefinition/>
             <!--正文-->
             <RowDefinition Height="40"/>
-            <!--状态栏-->
-            <RowDefinition Height="40"/>
             <!--按钮-->
         </Grid.RowDefinitions>
         <Label Content="你的邮箱地址：" Grid.Row="0" Grid.Column="0" Margin="5,5,5,5"/>
@@ -42,11 +40,10 @@
         <Label Content="邮件标题：" Grid.Row="3" Grid.Column="0" Margin="5,5,5,5"/>
         <TextBox Grid.Row="3" Grid.Column="1" Margin="5,5,5,5" Text="{Binding Title}"/>
         <Label Content="附件（当前视频文件）" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,5,5,5"/>
-        <TextBox Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" VerticalAlignment="Stretch" Margin="5,5,5,5" FontSize="20" AcceptsReturn="True" Text="{Binding Body}"/>
-        <StatusBar Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2">
-            
-        </StatusBar>
-        <StackPanel Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" FlowDirection="RightToLeft">
+        <TextBox Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" Margin="5,5,5,5" FontSize="20" AcceptsReturn="True"
+                 Text="{Binding Body}" x:Name="BodyEditor"
+                 TextWrapping="Wrap"/>
+        <StackPanel Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" FlowDirection="RightToLeft">
             <Button Content="取消" HorizontalAlignment="Right" Width="120" Margin="10,5,10,5" Click="CancelButton_Click"/>
             <Button Content="发送" Background="Blue" Foreground="White" Width="120" Margin="10,5,10,5" Click="YesButton_Click"/>
         </StackPanel>

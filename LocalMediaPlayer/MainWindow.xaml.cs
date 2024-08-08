@@ -55,10 +55,20 @@ namespace LocalMediaPlayer
                     break;
                 case PlayEvent.Edit:
                     {
-                        Process ps = new();
-                        ps.StartInfo.FileName = theMediaPlayer.Source.LocalPath;
-                        ps.Start();
-                        break;
+                        try
+                        {
+                            Process ps = new();
+                            ps.StartInfo.FileName = "MediaEditor";
+                            ps.StartInfo.Arguments = theMediaPlayer.Source.LocalPath;
+                            ps.Start();
+                            break;
+                        }
+                        catch(Exception ex)
+                        {
+                            MessageBox.Show(ex.Message, "错误", MessageBoxButton.OK, MessageBoxImage.Error);
+                            Environment.Exit(-1);
+                            break;
+                        }
                     }
                 case PlayEvent.SharedToLocal:
                     {
@@ -109,7 +119,7 @@ namespace LocalMediaPlayer
                 case (int)FileComboBoxItem.OpenFile:
                     {
                         OpenFileDialog dlg = new();
-                        dlg.Filter = "视频文件|*.wmv;*.asf;*.avi;*.mp4;*.m4a;*.m4v;*.mp3;*.wav;*.wma";
+                        dlg.Filter = filter;
                         dlg.InitialDirectory = __LocalFilePath;
                         dlg.Multiselect = false;
                         if ((bool)dlg.ShowDialog())
@@ -224,6 +234,65 @@ namespace LocalMediaPlayer
                     break;
                 default:break;
             }
+        }
+
+        private void Grid_Drop(object sender, DragEventArgs e)
+        {
+            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+            if(files.Length>0)
+            {
+                if(IsMediaFile(files[0]))
+                {
+                    OpenUrl(files[0]);
+                    AddToList();
+                }
+            }
+        }
+
+        private void Grid_DragEnter(object sender, DragEventArgs e)
+        {
+            if(e.Data.GetDataPresent(DataFormats.FileDrop))
+            {
+                e.Effects = DragDropEffects.Copy;
+            }
+            else
+            {
+                e.Effects= DragDropEffects.None;
+            }
+        }
+
+        private static readonly string[] audioExtensions = { ".mp3", ".wav", ".ogg", ".flac", ".m4a", ".wma" };
+        private static readonly string[] videoExtensions = { ".mp4", ".avi", ".mov", ".flv", ".mkv", ".wmv", ".mpg", ".mpeg" };
+        private static string filter = "所有媒体文件|*.mp3;*.wav;*.ogg;*.flac;*.m4a;*.wma;*.mp4;*.avi;*.mov;*.flv;*.mkv;*.wmv;*.mpg;*.mpeg|" +
+                "音频文件|*.mp3;*.wav;*.ogg;*.flac;*.m4a;*.wma|" +
+                "视频文件|*.mp4;*.avi;*.mov;*.flv;*.mkv;*.wmv;*.mpg;*.mpeg|" +
+                "所有文件|*.*";
+
+        public static bool IsMediaFile(string filePath)
+        {
+            // 检查字符串是否为空或空字符串
+            if (string.IsNullOrWhiteSpace(filePath))
+            {
+                return false;
+            }
+
+            // 获取文件的扩展名
+            string fileExtension = Path.GetExtension(filePath).ToLowerInvariant();
+
+            // 检查是否是音频文件扩展名
+            if (Array.IndexOf(audioExtensions, fileExtension) >= 0)
+            {
+                return true;
+            }
+
+            // 检查是否是视频文件扩展名
+            if (Array.IndexOf(videoExtensions, fileExtension) >= 0)
+            {
+                return true;
+            }
+
+            // 如果不是以上任何一种扩展名，则不是多媒体文件
+            return false;
         }
     }
 }

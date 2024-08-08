@@ -9,8 +9,9 @@
         WindowState="Maximized"
         ShowsNavigationUI="False"
         Closed="NavigationWindow_Closed" KeyDown="NavigationWindow_KeyDown">
+
     <NavigationWindow.Content>
-        <Grid>
+        <Grid AllowDrop="True" Drop="Grid_Drop" DragEnter="Grid_DragEnter">
             <Grid.RowDefinitions>
                 <RowDefinition Height="30"/>
                 <RowDefinition/>

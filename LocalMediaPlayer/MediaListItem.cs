@@ -12,6 +12,7 @@ namespace LocalMediaPlayer
         public MediaListItem(string fileName, MediaListItemCtrl ctrl)
         {
             __Ctrl = ctrl;
+            __VideoDateTime = GetNowDateTimeStr();
             FileName = fileName;
         }
 
@@ -29,7 +30,6 @@ namespace LocalMediaPlayer
             set
             {
                 __FileName = value;
-                __VideoDateTime = GetNowDateTimeStr();
                 __Ctrl.FileName = __FileName;
                 __Ctrl.VideoDateTimeStr = __VideoDateTime;
             }
@@ -55,7 +55,7 @@ namespace LocalMediaPlayer
         private MediaListItemCtrl __Ctrl;
         private string GetNowDateTimeStr()
         {
-            DateTime dt = new();
+            DateTime dt = System.DateTime.Now;
             string str;
             str = string.Format("{0:D4}/{1:D2}/{2:D2} {3:D2}:{4:D2}:{5:D2}",
                 dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute, dt.Second);

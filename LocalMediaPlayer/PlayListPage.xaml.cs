@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Xml;
 
 namespace LocalMediaPlayer
@@ -69,7 +57,6 @@ namespace LocalMediaPlayer
                 {
                     wrt.WriteStartDocument();
                     wrt.WriteStartElement("PlayList");
-                    wrt.WriteAttributeString("Number", MediaList.Count.ToString());
                     foreach(MediaListItem it in MediaList)
                     {
                         wrt.WriteStartElement("ListItem");
@@ -92,6 +79,7 @@ namespace LocalMediaPlayer
             MediaListItemCtrl ctrl = new();
             MediaList.Add(new(uri, ctrl));
             MediaListStackPanel.Children.Add(ctrl);
+            ItemCountLabel.Content = $"{MediaListStackPanel.Children.Count}个项目";
         }
 
         private void PlayListItem_Event(object sender, ControlPlayEventHandleArgs e)
@@ -105,6 +93,7 @@ namespace LocalMediaPlayer
             MediaListItemCtrl ctrl = new();
             MediaList.Add(new(uri,videodatetime, ctrl));
             MediaListStackPanel.Children.Add(ctrl);
+            ItemCountLabel.Content = $"{MediaListStackPanel.Children.Count}个项目";
         }
 
         public List<MediaListItem> MediaList;
@@ -117,14 +106,16 @@ namespace LocalMediaPlayer
 
         private void OperatorComboBox_Click(object sender, RoutedEventArgs e)
         {
-            for(int i=0;i<MediaList.Count;i++)
+            for(int i=0;i<MediaList.Count;)
             {
                 if (MediaList[i].IsCheck)
                 {
                     MediaListStackPanel.Children.Remove(MediaList[i].Ctrl);
                     MediaList.Remove(MediaList[i]);
                 }
+                else i++;
             }
+            ItemCountLabel.Content = $"{MediaListStackPanel.Children.Count}个项目";
         }
     }
 }
