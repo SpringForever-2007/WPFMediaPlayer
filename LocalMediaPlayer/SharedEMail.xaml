@@ -32,20 +32,23 @@
             <!--按钮-->
         </Grid.RowDefinitions>
         <Label Content="你的邮箱地址：" Grid.Row="0" Grid.Column="0" Margin="5,5,5,5"/>
-        <TextBox Grid.Row="0" Grid.Column="1" Margin="5,5,5,5" Text="{Binding UserEMailAddress}"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Margin="5,5,5,5" Text="{Binding UserEMailAddress}" Style="{StaticResource SingleLineTextBoxStyle}"/>
         <Label Grid.Row="1" Grid.Column="0" Content="你的邮箱密码：" Margin="5,5,5,5"/>
-        <TextBox Grid.Row="1" Grid.Column="1" Margin="5,5,5,5" Text="{Binding UserEMailPassword}"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="5,5,5,5" Text="{Binding UserEMailPassword}" Style="{StaticResource SingleLineTextBoxStyle}"/>
         <Label Content="接收方邮箱地址：" Grid.Row="2" Grid.Column="0" Margin="5,5,5,5"/>
-        <TextBox Grid.Row="2" Grid.Column="1" Margin="5,5,5,5" Text="{Binding OtherEMailAddress}"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Margin="5,5,5,5" Text="{Binding OtherEMailAddress}" Style="{StaticResource SingleLineTextBoxStyle}"/>
         <Label Content="邮件标题：" Grid.Row="3" Grid.Column="0" Margin="5,5,5,5"/>
-        <TextBox Grid.Row="3" Grid.Column="1" Margin="5,5,5,5" Text="{Binding Title}"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Margin="5,5,5,5" Text="{Binding Title}"  Style="{StaticResource SingleLineTextBoxStyle}"/>
         <Label Content="附件（当前视频文件）" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,5,5,5"/>
         <TextBox Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" Margin="5,5,5,5" FontSize="20" AcceptsReturn="True"
                  Text="{Binding Body}" x:Name="BodyEditor"
                  TextWrapping="Wrap"/>
         <StackPanel Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" FlowDirection="RightToLeft">
             <Button Content="取消" HorizontalAlignment="Right" Width="120" Margin="10,5,10,5" Click="CancelButton_Click"/>
-            <Button Content="发送" Background="Blue" Foreground="White" Width="120" Margin="10,5,10,5" Click="YesButton_Click"/>
+                <Button Content="发送" Width="120" Margin="10,5,10,5" Click="YesButton_Click" Style="{StaticResource DefaultButtonStyle}"/>
         </StackPanel>
     </Grid>
+    <Page.RenderTransform>
+        <TranslateTransform X="0"/>
+    </Page.RenderTransform>
 </Page>

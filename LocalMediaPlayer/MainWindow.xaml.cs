@@ -3,10 +3,27 @@ using System.Diagnostics;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using System.Windows.Navigation;
 
 namespace LocalMediaPlayer
 {
+    public enum PlayEvent
+    {
+        Play = 0,
+        Pause,
+        PositionChanged,
+        StartChangePosition,
+        EndChangePosition,
+        SoundChanged,
+        MediaSpeedChanged,
+        Edit,
+        OpenFromList,
+        SharedToLocal,
+        SharedByNet,
+        SharedToEMail
+    }
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -107,6 +124,7 @@ namespace LocalMediaPlayer
         private enum FileComboBoxItem
         {
             OpenFile = 0,
+            NetStream,
             PlayList,
             About,
             Ezit
@@ -143,6 +161,10 @@ namespace LocalMediaPlayer
                     {
                         AboutDialog dlg = new();
                         dlg.ShowDialog();
+                        break;
+                    }
+                case (int)FileComboBoxItem.NetStream:
+                    {
                         break;
                     }
             }
@@ -293,6 +315,32 @@ namespace LocalMediaPlayer
 
             // 如果不是以上任何一种扩展名，则不是多媒体文件
             return false;
+        }
+
+        private void NavigationWindow_Navigating(object sender, NavigatingCancelEventArgs e)
+        {
+            if(Content!=null)
+            {
+                App.SlideOutAnimation.Begin(Content as FrameworkElement);
+            }
+        }
+
+        private void NavigationWindow_Navigated(object sender, NavigationEventArgs e)
+        {
+            if(Content != null)
+            {
+                App.SlideInAnimation.Begin(Content as FrameworkElement);
+            }
+        }
+
+        private void theMediaPlayer_BufferingStarted(object sender, RoutedEventArgs e)
+        {
+            BuffingPopup.IsOpen = true;
+        }
+
+        private void theMediaPlayer_BufferingEnded(object sender, RoutedEventArgs e)
+        {
+            BuffingPopup.IsOpen = false;
         }
     }
 }

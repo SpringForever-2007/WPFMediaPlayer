@@ -4,22 +4,6 @@ using System.Windows.Threading;
 
 namespace LocalMediaPlayer
 {
-    public enum PlayEvent
-    {
-        Play=0,
-        Pause,
-        PositionChanged,
-        StartChangePosition,
-        EndChangePosition,
-        SoundChanged,
-        MediaSpeedChanged,
-        Edit,
-        OpenFromList,
-        SharedToLocal,
-        SharedByNet,
-        SharedToEMail
-    }
-
     public enum MediaSpeed
     {
         Speed0_25=25,
@@ -80,13 +64,13 @@ namespace LocalMediaPlayer
                 __IsPlaying = value;
                 if(__IsPlaying)
                 {
-                    PlayButton.Template = (ControlTemplate)Resources["roundbutton2paused"];
+                    PlayButton.Template = (ControlTemplate)Resources["PauseButtonTemplate"];
                     PlayButton.ToolTip = "暂停";
                     __Timer.Start();
                 }
                 else
                 {
-                    PlayButton.Template = (ControlTemplate)Resources["roundbutton2playing"];
+                    PlayButton.Template = (ControlTemplate)Resources["PlayButtonTemplate"];
                     PlayButton.ToolTip = "播放";
                     __Timer.Stop();
                 }
@@ -229,7 +213,7 @@ namespace LocalMediaPlayer
         {
             __IsPlaying = false;
             __NaturalDuration=TimeSpan.Zero;
-            PlayButton.Template = (ControlTemplate)Resources["roundbutton2playing"];
+            PlayButton.Template = (ControlTemplate)Resources["PauseButtonTemplate"];
             PlayButton.ToolTip = "播放";
             SoundSlider.Value = 0;
             PositionSlider.Value = 0;

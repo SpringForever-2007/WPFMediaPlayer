@@ -7,47 +7,45 @@
              mc:Ignorable="d" 
              d:DesignHeight="180" d:DesignWidth="800">
     <UserControl.Resources>
-        <ControlTemplate x:Key="roundbutton1" TargetType="Button">
-            <Grid>
-                <Ellipse Fill="{TemplateBinding Background}" Stroke="{TemplateBinding Foreground}" x:Name="BackgroundElement1"/>
-                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="倒退"/>
-            </Grid>
+        <ControlTemplate x:Key="PlayButtonTemplate" TargetType="Button">
+            <Canvas>
+                <Ellipse Fill="SkyBlue" 
+                         Stroke="{StaticResource SystemBorderground}" 
+                         StrokeThickness="1" Canvas.Left="10" Canvas.Top="10"
+                         x:Name="Ellipse1" Width="100" Height="100"/>
+                <Path Data="M 35 35 L 35 85 L 90 60 Z" Fill="White" StrokeThickness="0"/>
+            </Canvas>
             <ControlTemplate.Triggers>
-                <Trigger Property="IsMouseOver" Value="true">
-                    <Setter Property="Fill" TargetName="BackgroundElement1" Value="AliceBlue"/>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Fill" TargetName="Ellipse1" Value="LightBlue"/>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="False">
+                    <Setter Property="Fill" TargetName="Ellipse1" Value="SkyBlue"/>
                 </Trigger>
             </ControlTemplate.Triggers>
         </ControlTemplate>
-        <ControlTemplate x:Key="roundbutton2playing" TargetType="Button">
-            <Grid>
-                <Ellipse Fill="{TemplateBinding Background}" Stroke="{TemplateBinding Foreground}" x:Name="BackgroundElement2"/>
-                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="播放"/>
-            </Grid>
+        <ControlTemplate x:Key="PauseButtonTemplate" TargetType="Button">
+            <Canvas>
+                <Ellipse Fill="SkyBlue" 
+                         Stroke="{StaticResource SystemBorderground}" 
+                         StrokeThickness="1" Canvas.Left="10" Canvas.Top="10"
+                         x:Name="Ellipse2" Width="100" Height="100">
+                </Ellipse>
+                <Rectangle Fill="White" StrokeThickness="0"
+                    Canvas.Left="35" Canvas.Top="35"
+                    Width="20" Height="50"
+                />
+                <Rectangle Fill="White" StrokeThickness="0"
+                    Canvas.Left="75" Canvas.Top="35"
+                    Width="20" Height="50"
+                />
+            </Canvas>
             <ControlTemplate.Triggers>
-                <Trigger Property="IsMouseOver" Value="true">
-                    <Setter Property="Fill" TargetName="BackgroundElement2" Value="AliceBlue"/>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Fill" TargetName="Ellipse2" Value="LightBlue"/>
                 </Trigger>
-            </ControlTemplate.Triggers>
-        </ControlTemplate>
-        <ControlTemplate x:Key="roundbutton2paused" TargetType="Button">
-            <Grid>
-                <Ellipse Fill="{TemplateBinding Background}" Stroke="{TemplateBinding Foreground}" x:Name="BackgroundElement2"/>
-                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="暂停"/>
-            </Grid>
-            <ControlTemplate.Triggers>
-                <Trigger Property="IsMouseOver" Value="true">
-                    <Setter Property="Fill" TargetName="BackgroundElement2" Value="AliceBlue"/>
-                </Trigger>
-            </ControlTemplate.Triggers>
-        </ControlTemplate>
-        <ControlTemplate x:Key="roundbutton3" TargetType="Button">
-            <Grid>
-                <Ellipse Fill="{TemplateBinding Background}" Stroke="{TemplateBinding Foreground}" x:Name="BackgroundElement3"/>
-                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="快进"/>
-            </Grid>
-            <ControlTemplate.Triggers>
-                <Trigger Property="IsMouseOver" Value="true">
-                    <Setter Property="Fill" TargetName="BackgroundElement3" Value="AliceBlue"/>
+                <Trigger Property="IsMouseOver" Value="False">
+                    <Setter Property="Fill" TargetName="Ellipse2" Value="SkyBlue"/>
                 </Trigger>
             </ControlTemplate.Triggers>
         </ControlTemplate>
@@ -69,13 +67,24 @@
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
         <Label Grid.Column="0" Grid.Row="0" x:Name="PositionLabel"/>
-        <Slider Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="5" Margin="5,0,5,0" x:Name="PositionSlider" ValueChanged="PositionSlider_ValueChanged" GotFocus="PositionSlider_GotFocus" LostFocus="PositionSlider_LostFocus"/>
+        <Slider Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="5" Margin="5,0,5,0" 
+                x:Name="PositionSlider" ValueChanged="PositionSlider_ValueChanged" 
+                GotFocus="PositionSlider_GotFocus"
+                LostFocus="PositionSlider_LostFocus" ToolTip="{Binding ElementName=PositionLabel, Path=Content}"/>
         <Label Grid.Column="6" Grid.Row="0" x:Name="NaturalDurationLabel"/>
-        <Button Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" Height="40" Template="{StaticResource roundbutton1}" ToolTip="倒退视频" x:Name="BackButton" Click="BackButton_Click"/>
-        <Button Grid.Column="3" Grid.Row="1" Margin="20,20,20,20" Template="{StaticResource roundbutton2playing}" x:Name="PlayButton" Click="PlayButton_Click"/>
-        <Button Grid.Column="4" Grid.Row="1" VerticalAlignment="Center" Height="40" Template="{StaticResource roundbutton3}" ToolTip="快进视频" x:Name="FrontButton" Click="FrontButton_Click"/>
-        <Menu Grid.Row="2" Grid.Column="0" IsEnabled="True" Background="White">
-            <MenuItem Header="操作" Background="White">
+        <Button Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" Height="40" ToolTip="倒退视频" x:Name="BackButton" Click="BackButton_Click" TabIndex="1">
+            <Image Source="./Left.png"/>
+        </Button>
+        <Button Grid.Column="3" Grid.Row="1" x:Name="PlayButton" Click="PlayButton_Click" Template="{StaticResource PlayButtonTemplate}" TabIndex="2">
+            <Button.Effect>
+                <DropShadowEffect Color="Gray" Direction="325" BlurRadius="10"/>
+            </Button.Effect>
+        </Button>
+        <Button Grid.Column="4" Grid.Row="1" VerticalAlignment="Center" Height="40" ToolTip="快进视频" x:Name="FrontButton" Click="FrontButton_Click" TabIndex="3">
+            <Image Source="./Right.png"/>
+        </Button>
+        <Menu Grid.Row="2" Grid.Column="0" IsEnabled="True" Background="Transparent">
+            <MenuItem Header="操作">
                 <MenuItem Header="速度" Background="White">
                     <MenuItem Header="0.25" Click="Speed_MenuItem_Click"/>
                     <MenuItem Header="0.5" Click="Speed_MenuItem_Click"/>

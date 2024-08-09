@@ -17,7 +17,7 @@
             <ColumnDefinition Width="80"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
-            <Button Content="返回" Height="30" Width="60" Click="Button_Click"/>
+            <Button Content="返回" Width="60" Click="Button_Click" Style="{StaticResource DefaultButtonStyle}"/>
             <Label Margin="10,0,0,0" x:Name="ItemCountLabel"/>
         </StackPanel>
         <Button Grid.Row="0" Grid.Column="1" x:Name="OperatorComboBox" Content="删除" Click="OperatorComboBox_Click"/>
@@ -26,4 +26,8 @@
             </StackPanel>
         </ScrollViewer>
     </Grid>
+    
+    <Page.RenderTransform>
+        <TranslateTransform X="0" />
+    </Page.RenderTransform>
 </Page>

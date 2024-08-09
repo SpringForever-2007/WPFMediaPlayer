@@ -4,5 +4,95 @@
              xmlns:local="clr-namespace:LocalMediaPlayer"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <ResourceDictionary>
+            <SolidColorBrush x:Key="SystemBackground" Color="LightBlue"/>
+            <SolidColorBrush x:Key="SystemForeground" Color="Black"/>
+            <SolidColorBrush x:Key="SystemBorderground" Color="Black"/>
+            <SolidColorBrush x:Key="SystemFocusBackGround" Color="White"/>
+
+            <Style x:Key="DefaultButtonStyle" TargetType="Button">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Grid Margin="5,0,5,0" Height="30">
+                                <Rectangle Fill="{StaticResource SystemBackground}" Stroke="{StaticResource SystemForeground}" x:Name="BackgroundElement1" RadiusX="5" RadiusY="5"/>
+                                <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="true">
+                                    <Setter Property="Fill" TargetName="BackgroundElement1" Value="{StaticResource SystemFocusBackGround}"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="RoundButtonStyle" TargetType="Button">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Grid>
+                                <Ellipse Fill="{StaticResource SystemBackground}" Stroke="{StaticResource SystemForeground}" x:Name="BackgroundElement2"/>
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="{TemplateBinding Content}"/>
+                            </Grid>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="true">
+                                    <Setter Property="Fill" TargetName="BackgroundElement2" Value="{StaticResource SystemFocusBackGround}"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style TargetType="TextBox" x:Key="SingleLineTextBoxStyle">
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="BorderBrush" Value="{StaticResource SystemBorderground}"/>
+                <Setter Property="BorderThickness" Value="0,0,0,1"/>
+                <Setter Property="Padding" Value="0"/>
+                <Setter Property="Margin" Value="0"/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="TextBox">
+                            <Border Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                                <ScrollViewer x:Name="PART_ContentHost" Padding="{TemplateBinding Padding}" Focusable="False"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="LightGray"/>
+                                </Trigger>
+                                <Trigger Property="IsKeyboardFocused" Value="True">
+                                    <Setter Property="BorderThickness" Value="0,0,0,1"/>
+                                    <Setter Property="BorderBrush" Value="Blue"/>
+                                    <Setter Property="Background" Value="White"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Storyboard x:Key="SlideInAnimation">
+                <DoubleAnimation Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)"
+                         To="0" From="500"
+                         Duration="0:0:0.2" />
+            </Storyboard>
+
+            <Storyboard x:Key="SlideOutAnimation">
+                <DoubleAnimation Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)"
+                         From="0" To="500"
+                         Duration="0:0:0.2" />
+            </Storyboard>
+
+            <RadialGradientBrush x:Key="MainWindowBackground">
+                <GradientStop Color="LightBlue"/>
+                <GradientStop Color="White" Offset="1"/>
+            </RadialGradientBrush>
+
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

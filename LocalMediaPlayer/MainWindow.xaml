@@ -8,7 +8,9 @@
         Title="本地媒体播放器"
         WindowState="Maximized"
         ShowsNavigationUI="False"
-        Closed="NavigationWindow_Closed" KeyDown="NavigationWindow_KeyDown">
+        Closed="NavigationWindow_Closed" KeyDown="NavigationWindow_KeyDown"
+        Navigating="NavigationWindow_Navigating" Navigated="NavigationWindow_Navigated" 
+                  Background="{StaticResource MainWindowBackground}">
 
     <NavigationWindow.Content>
         <Grid AllowDrop="True" Drop="Grid_Drop" DragEnter="Grid_DragEnter">
@@ -18,8 +20,10 @@
                 <RowDefinition Height="180"/>
             </Grid.RowDefinitions>
             <StackPanel Orientation="Horizontal" Grid.Row="0">
-                <ComboBox ToolTip="文件" x:Name="FileComboBox" SelectionChanged="FileComboBox_SelectionChanged">
+                <ComboBox ToolTip="文件" x:Name="FileComboBox" 
+                          SelectionChanged="FileComboBox_SelectionChanged">
                     <ComboBoxItem Content="打开"/>
+                    <ComboBoxItem Content="网络流"/>
                     <ComboBoxItem Content="播放列表"/>
                     <ComboBoxItem Content="关于"/>
                     <ComboBoxItem Content="退出"/>
@@ -29,9 +33,16 @@
             <Rectangle Grid.Row="1" Fill="Black"/>
             <MediaElement Grid.Row="1" x:Name="theMediaPlayer" LoadedBehavior="Manual" UnloadedBehavior="Stop" 
                           MediaFailed="MediaPlayer_MediaFailed" MediaEnded="theMediaPlayer_MediaEnded" 
-                          MediaOpened="theMediaPlayer_MediaOpened" MouseDown="theMediaPlayer_MouseDown">
+                          MediaOpened="theMediaPlayer_MediaOpened" MouseDown="theMediaPlayer_MouseDown"
+                          BufferingStarted="theMediaPlayer_BufferingStarted" BufferingEnded="theMediaPlayer_BufferingEnded">
             </MediaElement>
-            <local:PlayCtrl VerticalAlignment="Bottom" Grid.Row="2" x:Name="thePlayCtrl" IsEnabled="False"/>
+            <local:PlayCtrl VerticalAlignment="Bottom" Grid.Row="2" x:Name="thePlayCtrl" IsEnabled="False" Background="White"/>
+            <Popup IsOpen="False" Placement="Center" PopupAnimation="Slide" StaysOpen="False" x:Name="BuffingPopup">
+                <StackPanel Orientation="Vertical">
+                    <Label Content="媒体正在缓冲"/>
+                    <ProgressBar Maximum="1" Value="{Binding ElementName=theMediaPlayer, Path=BufferingProgress, Mode=OneWay}"/>
+                </StackPanel>
+            </Popup>
         </Grid>
     </NavigationWindow.Content>
 </NavigationWindow>

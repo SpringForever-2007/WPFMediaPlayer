@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -21,9 +16,9 @@ namespace LocalMediaPlayer
             try
             {
                 Title = "关于";
-                Width = 200;
-                Height = 150;
                 ResizeMode = ResizeMode.NoResize;
+                Width=250;
+                Height=200;
 
                 View = new();
                 string html = File.ReadAllText("AboutView.html");
@@ -31,33 +26,39 @@ namespace LocalMediaPlayer
                 MoreButton = new();
                 MoreButton.Content = "更多";
                 MoreButton.Click += MoreButton_Click;
-                MoreButton.Margin = new(10, 5, 10, 5);
+                MoreButton.Width = 80;
+                MoreButton.TabIndex = 2;
+
                 OKButton = new();
                 OKButton.Content = "确定";
                 OKButton.Click += OKButton_Click;
-                OKButton.Margin = new(10,5,10,5);
+                OKButton.Width = 80;
+                OKButton.Style = App.DefaultButtonStyle;
+                OKButton.TabIndex = 1;
+                OKButton.IsDefault = true;
 
-                Content = new StackPanel
+                Content = new WrapPanel
                 {
                     Orientation = Orientation.Vertical,
 
                     Children =
-                {
-                    new TextBlock{Text=Introduction,Margin=new(10,5,10,5),TextWrapping=TextWrapping.Wrap},
-                    new StackPanel
                     {
-                        Orientation=Orientation.Horizontal,
-                        FlowDirection = FlowDirection.RightToLeft,
+                        new TextBlock{Text=Introduction,Margin=new(10,5,10,5),TextWrapping=TextWrapping.Wrap},
+                        new StackPanel
+                            {
+                                Orientation=Orientation.Horizontal,
+                                FlowDirection = FlowDirection.RightToLeft,
+                                VerticalAlignment = VerticalAlignment.Bottom,
 
-                        Children =
-                        {
-                            MoreButton,OKButton
-                        }
+                                Children =
+                                {
+                                    MoreButton,OKButton
+                                }
+                            }
                     }
-                }
                 };
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "错误", MessageBoxButton.OK, MessageBoxImage.Error);
                 Environment.Exit(-1);

@@ -18,20 +18,21 @@ namespace LocalMediaPlayer
         private void InitUI()
         {
             Title = "实时网络分享";
-            Width = 300;
-            Height = 200;
             ResizeMode = ResizeMode.NoResize;
+            Width = 250;
+            Height = 200;
 
             YesButton = new();
             YesButton.Content = "确定";
             YesButton.Click += YesButton_Click;
-            YesButton.Margin = new(10, 5, 10, 5);
+            YesButton.Style = App.DefaultButtonStyle;
+            YesButton.Width = 80;
+
             CancelButton = new();
             CancelButton.Content= "取消";
             CancelButton.Click += CancelButton_Click;
-            CancelButton.Background = new SolidColorBrush(Colors.Blue);
-            CancelButton.Foreground = new SolidColorBrush(Colors.White);
-            CancelButton.Margin = new(10, 5, 10, 5);
+            CancelButton.Width = 80;
+            CancelButton.Style=App.DefaultButtonStyle;
             page = new();
 
             StackPanel stackPanel1 = new StackPanel
@@ -141,6 +142,7 @@ namespace LocalMediaPlayer
                 IPTextBox.LostFocus += IPTextBox_LostFocus;
                 IPTextBox.GotFocus += IPTextBox_GotFocus;
                 IPTextBox.Width = 120;
+                IPTextBox.Style = App.SingleLineTextBoxStyle;
                 TipLabel = new();
                 TipLabel.TextWrapping = TextWrapping.Wrap;
 
