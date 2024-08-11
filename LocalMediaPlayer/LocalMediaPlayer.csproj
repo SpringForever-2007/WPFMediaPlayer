@@ -10,8 +10,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="AboutView.html" />
     <None Remove="Left.png" />
+    <None Remove="PlayListData.xml" />
     <None Remove="Right.png" />
+    <None Remove="RUNOOB-SVG-IMAGE.png" />
+    <None Remove="screen.svg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,7 +25,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="AboutView.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Left.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="PlayListData.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Right.png">

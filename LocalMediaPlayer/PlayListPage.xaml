@@ -20,7 +20,7 @@
             <Button Content="返回" Width="60" Click="Button_Click" Style="{StaticResource DefaultButtonStyle}"/>
             <Label Margin="10,0,0,0" x:Name="ItemCountLabel"/>
         </StackPanel>
-        <Button Grid.Row="0" Grid.Column="1" x:Name="OperatorComboBox" Content="删除" Click="OperatorComboBox_Click"/>
+        <Button Grid.Row="0" Grid.Column="1" x:Name="OperatorComboBox" Content="删除" Click="OperatorComboBox_Click" Style="{StaticResource DefaultButtonStyle}"/>
         <ScrollViewer Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" >
             <StackPanel Orientation="Vertical" x:Name="MediaListStackPanel">
             </StackPanel>

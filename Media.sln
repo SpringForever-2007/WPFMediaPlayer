@@ -9,6 +9,8 @@ Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupSteemMediaPlayerProjec
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocalMediaPlayer", "LocalMediaPlayer\LocalMediaPlayer.csproj", "{5154999C-E685-44D2-ACBB-0F3766A068CD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFClasses", "MFClasses\MFClasses.vcxproj", "{E6F09D4C-FE2D-4090-B2B6-F82E88F84173}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,18 @@ Global
 		{5154999C-E685-44D2-ACBB-0F3766A068CD}.Release|x64.Build.0 = Release|Any CPU
 		{5154999C-E685-44D2-ACBB-0F3766A068CD}.Release|x86.ActiveCfg = Release|Any CPU
 		{5154999C-E685-44D2-ACBB-0F3766A068CD}.Release|x86.Build.0 = Release|Any CPU
+		{E6F09D4C-FE2D-4090-B2B6-F82E88F84173}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{E6F09D4C-FE2D-4090-B2B6-F82E88F84173}.Debug|Any CPU.Build.0 = Debug|x64
+		{E6F09D4C-FE2D-4090-B2B6-F82E88F84173}.Debug|x64.ActiveCfg = Debug|x64
+		{E6F09D4C-FE2D-4090-B2B6-F82E88F84173}.Debug|x64.Build.0 = Debug|x64
+		{E6F09D4C-FE2D-4090-B2B6-F82E88F84173}.Debug|x86.ActiveCfg = Debug|Win32
+		{E6F09D4C-FE2D-4090-B2B6-F82E88F84173}.Debug|x86.Build.0 = Debug|Win32
+		{E6F09D4C-FE2D-4090-B2B6-F82E88F84173}.Release|Any CPU.ActiveCfg = Release|x64
+		{E6F09D4C-FE2D-4090-B2B6-F82E88F84173}.Release|Any CPU.Build.0 = Release|x64
+		{E6F09D4C-FE2D-4090-B2B6-F82E88F84173}.Release|x64.ActiveCfg = Release|x64
+		{E6F09D4C-FE2D-4090-B2B6-F82E88F84173}.Release|x64.Build.0 = Release|x64
+		{E6F09D4C-FE2D-4090-B2B6-F82E88F84173}.Release|x86.ActiveCfg = Release|Win32
+		{E6F09D4C-FE2D-4090-B2B6-F82E88F84173}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Diagnostics;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -72,10 +73,14 @@ namespace LocalMediaPlayer
 
         private void MoreButton_Click(object sender, RoutedEventArgs e)
         {
-            Window wnd = new();
-            wnd.Title = "更多";
-            wnd.Content = View;
-            wnd.ShowDialog();
+            try
+            {
+                Process.Start(new ProcessStartInfo("AboutView.html") { UseShellExecute = true });
+            }
+            catch (Exception)
+            {
+                // 处理可能出现的异常，例如URL格式不正确
+            }
         }
 
         private WebBrowser View;

@@ -166,11 +166,6 @@ namespace LocalMediaPlayer
             SetSpeed((MediaSpeed)(double.Parse((string)s.Header)*100));
         }
 
-        private void OpenEditorMeniItem_Click(object sender, RoutedEventArgs e)
-        {
-            Event?.Invoke(this, new(PlayEvent.Edit, this));
-        }
-
         public void BackOrFront(bool IsBack)
         {
             if(IsBack)
@@ -211,9 +206,10 @@ namespace LocalMediaPlayer
 
         public void UnEnable()
         {
+            __Timer.Stop();
             __IsPlaying = false;
             __NaturalDuration=TimeSpan.Zero;
-            PlayButton.Template = (ControlTemplate)Resources["PauseButtonTemplate"];
+            PlayButton.Template = (ControlTemplate)Resources["PlayButtonTemplate"];
             PlayButton.ToolTip = "播放";
             SoundSlider.Value = 0;
             PositionSlider.Value = 0;

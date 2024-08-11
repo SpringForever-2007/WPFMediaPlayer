@@ -3,7 +3,6 @@ using System.Diagnostics;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Media;
 using System.Windows.Navigation;
 
 namespace LocalMediaPlayer
@@ -17,7 +16,6 @@ namespace LocalMediaPlayer
         EndChangePosition,
         SoundChanged,
         MediaSpeedChanged,
-        Edit,
         OpenFromList,
         SharedToLocal,
         SharedByNet,
@@ -70,35 +68,19 @@ namespace LocalMediaPlayer
                 case PlayEvent.MediaSpeedChanged:
                     theMediaPlayer.SpeedRatio=(double)e.Param;
                     break;
-                case PlayEvent.Edit:
-                    {
-                        try
-                        {
-                            Process ps = new();
-                            ps.StartInfo.FileName = "MediaEditor";
-                            ps.StartInfo.Arguments = theMediaPlayer.Source.LocalPath;
-                            ps.Start();
-                            break;
-                        }
-                        catch(Exception ex)
-                        {
-                            MessageBox.Show(ex.Message, "错误", MessageBoxButton.OK, MessageBoxImage.Error);
-                            Environment.Exit(-1);
-                            break;
-                        }
-                    }
                 case PlayEvent.SharedToLocal:
                     {
                         SaveFileDialog dlg = new();
-                        dlg.Filter = "视频文件|*.wmv;*.asf;*.avi;*.mp4;*.m4a;*.m4v;*.mp3;*.wav;*.wma";
+                        dlg.Filter = filter;
                         dlg.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyVideos);
-                        if ((bool)dlg.ShowDialog())
+                        bool? result=dlg.ShowDialog();
+                        if(result!=null&&(bool)result)
                         {
                             string fn = dlg.FileName;
-                            if(fn!=theMediaPlayer.Source.LocalPath)
+                            if (fn != theMediaPlayer.Source.LocalPath)
                             {
                                 //复制文件
-                                File.Copy(theMediaPlayer.Source.LocalPath,fn);
+                                File.Copy(theMediaPlayer.Source.LocalPath, fn);
                                 MessageBox.Show($"{theMediaPlayer.Source.LocalPath}已成功分享到{fn}");
                             }
                         }
@@ -124,7 +106,6 @@ namespace LocalMediaPlayer
         private enum FileComboBoxItem
         {
             OpenFile = 0,
-            NetStream,
             PlayList,
             About,
             Ezit
@@ -140,7 +121,8 @@ namespace LocalMediaPlayer
                         dlg.Filter = filter;
                         dlg.InitialDirectory = __LocalFilePath;
                         dlg.Multiselect = false;
-                        if ((bool)dlg.ShowDialog())
+                        bool? result=dlg.ShowDialog();
+                        if(result!=null&&(bool)result)
                         {
                             OpenUrl(dlg.FileName);
                             AddToList();
@@ -163,10 +145,6 @@ namespace LocalMediaPlayer
                         dlg.ShowDialog();
                         break;
                     }
-                case (int)FileComboBoxItem.NetStream:
-                    {
-                        break;
-                    }
             }
             FileComboBox.SelectedIndex = -1;
         }
@@ -174,7 +152,7 @@ namespace LocalMediaPlayer
         private void MediaPlayer_MediaFailed(object sender, ExceptionRoutedEventArgs e)
         {
             MessageBox.Show(e.ErrorException.Message, "错误", MessageBoxButton.OK, MessageBoxImage.Error);
-            theMediaPlayer.Close();
+            Stop();
         }
 
         private void theMediaPlayer_MediaEnded(object sender, RoutedEventArgs e)
@@ -206,15 +184,23 @@ namespace LocalMediaPlayer
 
         public void OpenUrl(string videopath)
         {
-            Uri uri = new(videopath);
-            theMediaPlayer.Source = uri;
-            theMediaPlayer.Play();
-            FileNameLabel.Content = Path.GetFileName(videopath);
-            __LocalFilePath = Path.GetDirectoryName(videopath);
+            try
+            {
+                Uri uri = new(videopath);
+                theMediaPlayer.Source = uri;
+                theMediaPlayer.Play();
+                FileNameLabel.Content = Path.GetFileName(videopath);
+                __LocalFilePath = Path.GetDirectoryName(videopath);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message,"错误",MessageBoxButton.OK,MessageBoxImage.Error); ;
+            }
         }
 
         public void Stop()
         {
+            theMediaPlayer.Stop();
             theMediaPlayer.Source = null;
             FileNameLabel.Content = "";
             thePlayCtrl.UnEnable();

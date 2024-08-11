@@ -23,7 +23,6 @@
                 <ComboBox ToolTip="文件" x:Name="FileComboBox" 
                           SelectionChanged="FileComboBox_SelectionChanged">
                     <ComboBoxItem Content="打开"/>
-                    <ComboBoxItem Content="网络流"/>
                     <ComboBoxItem Content="播放列表"/>
                     <ComboBoxItem Content="关于"/>
                     <ComboBoxItem Content="退出"/>

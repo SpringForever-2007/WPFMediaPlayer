@@ -90,7 +90,7 @@
 
             <RadialGradientBrush x:Key="MainWindowBackground">
                 <GradientStop Color="LightBlue"/>
-                <GradientStop Color="White" Offset="1"/>
+                <GradientStop Color="White" Offset="0.8"/>
             </RadialGradientBrush>
 
         </ResourceDictionary>
