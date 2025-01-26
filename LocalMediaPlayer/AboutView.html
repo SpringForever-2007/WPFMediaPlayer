@@ -16,6 +16,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             /* 阴影样式 */
             background-color: beige;
+            color: black;
         }
 
         .warning-board {
@@ -39,10 +40,14 @@
             margin-left: auto;
             margin-right: auto;
         }
+        .post{
+            font-size: 32px;
+            font-style: italic;
+        }
     </style>
 </head>
 
-<body>
+<body style="background-color: white;">
     <div title="文档" class="center-div">
         <details>
             <summary style="color: blue;">概述</summary>
@@ -54,13 +59,26 @@
             </p>
         </details>
         <details>
+            <summary style="color: blue;">我们的优势</summary>
+            <h2>为什么选择LocalMediaPlayer?</h2>
+            <h3>简洁的界面</h3>
+            <img src="show1.png" width="500px" style="margin-left: 100px;margin-right: 100px;">
+            <h3>播放列表</h3>
+            <img src="show2.png" width="500px" style="margin-left: 100px;margin-right: 100px;">
+            <h3>简单的操作</h3>
+            <img src="show3.png" width="500px" style="margin-left: 100px;margin-right: 100px;">
+            <h3>轻松分享</h3>
+            <img src="show4.png" width="500px" style="margin-left: 100px;margin-right: 100px;">
+            </datalist>
+        </details>
+        <details>
             <summary style="color: blue;">开始使用</summary>
             <p>
                 <a href="https://github.com/SpringForever-2007/Media/tree/master"
-                    target="_blank">点击连接</a>，按照说明下载最新安装包，或者从源构建。
+                    target="_blank">点击链接</a>，按照说明下载最新安装包，或者从源构建。
                 以下是其支持的操作系统要求
                 <br>
-            <table name="OS suport">
+            <table id="OS suport">
                 <tr>
                     <th>OS最低版本</th>
                     <th>框架</th>
@@ -79,7 +97,7 @@
         <details>
             <summary style="color: blue;">功能介绍</summary>
             <h2>概览</h2>
-            <table name="function">
+            <table id="function">
                 <tr>
                     <td><a href="#playlocalmediafilefunction" target="_self">播放本地媒体</a></td>
                 </tr>
@@ -100,7 +118,7 @@
                 </tr>
             </table>
             <br>
-            <P name="playlocalmediafilefunction">
+            <P id="playlocalmediafilefunction">
                 点击左上角的组合框，再点击第一个项【打开】，会出现一个打开文件对话框，可以选择多媒体文件。
             <div class="tip-board">
                 如果你找不到文件，可以更改右下角的筛选器，
@@ -119,12 +137,12 @@
             </table>
             <br>
             </P>
-            <p name="playlistfunction">
+            <p id="playlistfunction">
                 每当使用【打开】成功播放一个文件时，会自动向文件列表添加一个新项（除非已经有这个项了），点击左上角的组合框，然后点击播放列表，即会导航到一个页面，
                 每个项都包含文件地址，第一次打开的日期，以及一个检查框，如果检查框被选中，那么可以点击右上角的删除按钮进行删除，双击菜单项可以打开文件，点击左上角的返回可以进行返回。
             </p>
             <br>
-            <p name="usercontrolfunction">
+            <p id="usercontrolfunction">
                 在主窗口下面，有三个按钮，两个滑块，一个菜单，可以进行快进，倒退，暂停，播放，调节进度，调节音量，菜单项可以调节播放速度，或者分享。
                 以下是支持的倍速
             <table>
@@ -152,11 +170,11 @@
             </div>
             </p>
             <br>
-            <p name="fileslidefunction">
+            <p id="fileslidefunction">
                 你可以把<a href="#playlocalmediafilefunction" target="_self">符合要求的文件</a>拖拽到主窗口，这样我们就会为你播放该文件
             </p>
             <br>
-            <p name="keycontrolfunction">
+            <p id="keycontrolfunction">
                 在主窗口中，如果应用具有焦点，可以使用按键和鼠标键控制播放，以下是键表
             <table>
                 <tr>
@@ -185,7 +203,7 @@
             </div>
             </p>
             <br>
-            <P name="sharefunction">
+            <P id="sharefunction">
                 在主窗口左下角的【操作】菜单，点击【分享】，会有三种分享方式，【本地分享】，【网络分享】，【邮件分享】。以下是详细内容。
             <table>
                 <tr>
@@ -208,11 +226,57 @@
                 <tr>
                     <td>邮件分享</td>
                     <td>根据你的邮箱（需要你的密码，我们尊重你的隐私）以及对方的邮箱，通过发送带有标题，正文和附件（当前视频）的邮件分享</td>
+                    <td>
+                        支持的邮件类型有：
+                        <table>
+                            <tr>
+                                <td>qq.com</td>
+                            </tr>
+                            <tr>
+                                <td>163.com</td>
+                            </tr>
+                            <tr>
+                                <td>126.com</td>
+                            </tr>
+                            <tr>
+                                <td>139.com</td>
+                            </tr>
+                            <tr>
+                                <td>sina.com</td>
+                            </tr>
+                            <tr>
+                                <td>sohu.com</td>
+                            </tr>
+                            <tr>
+                                <td>tom.com</td>
+                            </tr>
+                            <tr>
+                                <td>outlook.com/hotmail.com/live.com</td>
+                            </tr>
+                        </table>
+                    </td>
                 </tr>
             </table>
             </P>
         </details>
+        <details>
+            <summary style="color: blue;">版权信息</summary>
+            <p style="color: gray;font-style: oblique;">
+                MIT许可证
+                <br><br>
+                版权所有（c）[2024] [江兴华]
+                <br><br>
+                特此免费授予任何获得本软件及其相关文档文件（以下简称“软件”）副本的人不受限制地使用本软件的权利，包括但不限于使用、复制、修改、合并、发布、分发、再许可和/或销售本软件副本的权利，同时允许他人执行上述行为。
+                <br><br>
+                本软件仅供参考，不提供任何形式的明示或暗示保证，包括但不限于对适销性、特定用途适用性和非侵权性的保证。在任何情况下，版权持有者或版权持有者贡献者均不对任何直接、间接、偶然、特殊、惩戒性或后果性损害（包括但不限于采购替代商品或服务；使用、无法使用、数据丢失或利润损失；或业务中断）承担责任，无论成因如何，也无论在任何责任理论下，无论是在合同诉讼、严格责任诉讼还是侵权诉讼中，即使被告知此类损害的可能性。
+            </p>
+        </details>
     </div>
+    <br>
+    <hr>
+    <p style="color: gray;font-style: oblique;">
+        文档编写时间：2024年8月14日
+    </p>
 </body>
 
 </html>

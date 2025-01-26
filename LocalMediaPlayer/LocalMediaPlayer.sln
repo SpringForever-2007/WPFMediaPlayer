@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocalMediaPlayer", "LocalMediaPlayer.csproj", "{741AC697-E949-408E-8FEA-E7DEA91352CF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetNetFile", "GetNet\GetNetFile\GetNetFile.csproj", "{F56F728B-1B0A-48B2-8233-714C0C2E68C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{741AC697-E949-408E-8FEA-E7DEA91352CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{741AC697-E949-408E-8FEA-E7DEA91352CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{741AC697-E949-408E-8FEA-E7DEA91352CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F56F728B-1B0A-48B2-8233-714C0C2E68C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F56F728B-1B0A-48B2-8233-714C0C2E68C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F56F728B-1B0A-48B2-8233-714C0C2E68C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F56F728B-1B0A-48B2-8233-714C0C2E68C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -19,58 +19,42 @@ namespace LocalMediaPlayer
 
         public void Load()
         {
-            try
+            using (XmlReader rd = XmlReader.Create(".\\AppData.xml"))
             {
-                using (XmlReader rd = XmlReader.Create(".\\PlayListData.xml"))
+                rd.ReadStartElement("PlayList");
+                string fn, dt;
+                while (rd.Read())
                 {
-                    rd.ReadStartElement("PlayList");
-                    string fn, dt;
-                    while(rd.Read())
+                    if (rd.IsStartElement("ListItem"))
                     {
-                        if(rd.IsStartElement("ListItem"))
-                        {
-                            fn = rd.GetAttribute(0);
-                            dt = rd.GetAttribute(1);
-                            AddItem(fn, dt);
-                        }
+                        fn = rd.GetAttribute(0);
+                        dt = rd.GetAttribute(1);
+                        AddItem(fn, dt);
                     }
                 }
-            }
-            catch(Exception e)
-            {
-                MessageBox.Show(e.Message, "错误", MessageBoxButton.OK, MessageBoxImage.Error);
-                Environment.Exit(-1);
             }
         }
 
         public void Save()
         {
-            try
-            {
-                XmlWriterSettings settings = new XmlWriterSettings();
-                settings.Indent = true;
-                settings.IndentChars = ("\t");
-                settings.NewLineChars = ("\n");
-                settings.NewLineHandling = NewLineHandling.Replace;
+            XmlWriterSettings settings = new XmlWriterSettings();
+            settings.Indent = true;
+            settings.IndentChars = ("\t");
+            settings.NewLineChars = ("\n");
+            settings.NewLineHandling = NewLineHandling.Replace;
 
-                using (XmlWriter wrt = XmlWriter.Create(".\\PlayListData.xml",settings))
-                {
-                    wrt.WriteStartDocument();
-                    wrt.WriteStartElement("PlayList");
-                    foreach(MediaListItem it in MediaList)
-                    {
-                        wrt.WriteStartElement("ListItem");
-                        wrt.WriteAttributeString("FileName", it.FileName);
-                        wrt.WriteAttributeString("VideoDateTime", it.DateTime);
-                        wrt.WriteEndElement();
-                    }
-                    wrt.WriteEndDocument();
-                }
-            }
-            catch(Exception e)
+            using (XmlWriter wrt = XmlWriter.Create(".\\AppData.xml", settings))
             {
-                MessageBox.Show(e.Message,"错误",MessageBoxButton.OK, MessageBoxImage.Error);
-                Environment .Exit(-1);
+                wrt.WriteStartDocument();
+                wrt.WriteStartElement("PlayList");
+                foreach (MediaListItem it in MediaList)
+                {
+                    wrt.WriteStartElement("ListItem");
+                    wrt.WriteAttributeString("FileName", it.FileName);
+                    wrt.WriteAttributeString("VideoDateTime", it.DateTime);
+                    wrt.WriteEndElement();
+                }
+                wrt.WriteEndDocument();
             }
         }
 

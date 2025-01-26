@@ -3,7 +3,7 @@
 "VSVersion" = "3:800"
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
-"ProjectName" = "8:SetupSteemMediaPlayerProject"
+"ProjectName" = "8:SetupLocalMediaPlayer"
 "LanguageId" = "3:2052"
 "CodePage" = "3:936"
 "UILanguageId" = "3:2052"
@@ -15,98 +15,104 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_0EFFFA96E55B43BDB48140ECA4333D53"
+        "MsmKey" = "8:_22D95C89170046A095D9C2999FD1A6FA"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_16D7EB862E1C4E9A8BF60B5B88DABF2E"
+        "MsmKey" = "8:_456FF5906108442E95CEFB6C81C336F3"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_4342A4B0E6AA497AB23111DB4A59D490"
+        "MsmKey" = "8:_49E18ABD1D784648A921FBD24E88F247"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_4465C1A50F744AC0897DC0EB371A6CF6"
+        "MsmKey" = "8:_5F5FF9A8321243AA9774876BA88C134F"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_4EDF58D90AF543998021891449A26C0A"
+        "MsmKey" = "8:_70844DB8354147A5B2C74E32DD19E983"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_8234061B5A4A41AD82F1D0401CCCE271"
+        "MsmKey" = "8:_71B47A4DC90E4C17B506CC1A6EFE501D"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_9FCEA8DCAC9741E5A8256DC2C3665728"
+        "MsmKey" = "8:_7B1657160AE841BC8C31C253A1CAB5F7"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_DA6E7F288E4F40AE90A40104124EDEAE"
+        "MsmKey" = "8:_7CB0D72BF88647DBA3862ED86F64FD8D"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_E13C732DA0F1436582A716DACC0DD59A"
+        "MsmKey" = "8:_87305D25C1A4472AB0B382EF8A022642"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_F2806B6A12C747EAAA30142DC4CA7498"
+        "MsmKey" = "8:_8F6F6C6402AB467BAE24B611233865C7"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_943CEAE707864E4AA787146E19FD53D8"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A2DB3879C0414FEA8291B9909A3625B0"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A5A09D1D38B9486F99ACF8CE30B89DC5"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B7720C78C6604CD08B7E03D4C7CBB015"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D18AB578610842A9867FB52609C44FEB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D4F51C5742104CF29A462DD8DA7C7299"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_8234061B5A4A41AD82F1D0401CCCE271"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0EFFFA96E55B43BDB48140ECA4333D53"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4465C1A50F744AC0897DC0EB371A6CF6"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4EDF58D90AF543998021891449A26C0A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_E13C732DA0F1436582A716DACC0DD59A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_DA6E7F288E4F40AE90A40104124EDEAE"
+        "OwnerKey" = "8:_70844DB8354147A5B2C74E32DD19E983"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -117,7 +123,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\SetupSteemMediaPlayerProject.msi"
+        "OutputFilename" = "8:Debug\\SetupLocalMediaPlayer.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -133,7 +139,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\SetupSteemMediaPlayerProject.msi"
+        "OutputFilename" = "8:Release\\SetupLocalMediaPlayer.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -160,7 +166,17 @@
         {
             "LaunchCondition"
             {
-                "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_197967DC5AB94692B3EDC95A7BC982C0"
+                "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_6572D81EAC764908A56A5A484CE875FD"
+                {
+                "Name" = "8:.NET Core"
+                "Message" = "8:[VSDNETCOREMSG]"
+                "AllowLaterVersions" = "11:FALSE"
+                "InstallUrl" = "8:https://dotnet.microsoft.com/download/dotnet-core/[NetCoreVerMajorDotMinor]"
+                "IsNETCore" = "11:TRUE"
+                "Architecture" = "2:0"
+                "Runtime" = "2:0"
+                }
+                "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_ABDDF702F2AD4571A5D3E83ECD96F0D4"
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
@@ -172,23 +188,103 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0EFFFA96E55B43BDB48140ECA4333D53"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_22D95C89170046A095D9C2999FD1A6FA"
+            {
+            "SourcePath" = "8:..\\LocalMediaPlayer\\bin\\Release\\net8.0-windows\\LocalMediaPlayer.exe"
+            "TargetName" = "8:LocalMediaPlayer.exe"
+            "Tag" = "8:"
+            "Folder" = "8:_8B2F989A1E5744B1AD64505C7D1F3108"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_456FF5906108442E95CEFB6C81C336F3"
+            {
+            "SourcePath" = "8:..\\LocalMediaPlayer\\bin\\Release\\net8.0-windows\\AppData.xml"
+            "TargetName" = "8:AppData.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_8B2F989A1E5744B1AD64505C7D1F3108"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_49E18ABD1D784648A921FBD24E88F247"
+            {
+            "SourcePath" = "8:..\\LocalMediaPlayer\\bin\\Release\\net8.0-windows\\LocalMediaPlayer.runtimeconfig.json"
+            "TargetName" = "8:LocalMediaPlayer.runtimeconfig.json"
+            "Tag" = "8:"
+            "Folder" = "8:_8B2F989A1E5744B1AD64505C7D1F3108"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5F5FF9A8321243AA9774876BA88C134F"
+            {
+            "SourcePath" = "8:..\\LocalMediaPlayer\\bin\\Release\\net8.0-windows\\screen.svg"
+            "TargetName" = "8:screen.svg"
+            "Tag" = "8:"
+            "Folder" = "8:_8B2F989A1E5744B1AD64505C7D1F3108"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_70844DB8354147A5B2C74E32DD19E983"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+            "AssemblyAsmDisplayName" = "8:LocalMediaPlayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_0EFFFA96E55B43BDB48140ECA4333D53"
+                    "_70844DB8354147A5B2C74E32DD19E983"
                     {
-                    "Name" = "8:System.Core.dll"
+                    "Name" = "8:LocalMediaPlayer.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\System.Core.dll"
+            "SourcePath" = "8:..\\LocalMediaPlayer\\bin\\Release\\net8.0-windows\\LocalMediaPlayer.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_AD89AFE25C08415A9DF3D97A04A59D60"
+            "Folder" = "8:_8B2F989A1E5744B1AD64505C7D1F3108"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -203,12 +299,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_16D7EB862E1C4E9A8BF60B5B88DABF2E"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_71B47A4DC90E4C17B506CC1A6EFE501D"
             {
-            "SourcePath" = "8:..\\SteemMediaPlayer\\bin\\Release\\net8.0-windows\\SteemMediaPlayer.runtimeconfig.json"
-            "TargetName" = "8:SteemMediaPlayer.runtimeconfig.json"
+            "SourcePath" = "8:..\\LocalMediaPlayer\\bin\\Release\\net8.0-windows\\show1.png"
+            "TargetName" = "8:show1.png"
             "Tag" = "8:"
-            "Folder" = "8:_AD89AFE25C08415A9DF3D97A04A59D60"
+            "Folder" = "8:_8B2F989A1E5744B1AD64505C7D1F3108"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -223,12 +319,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4342A4B0E6AA497AB23111DB4A59D490"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7B1657160AE841BC8C31C253A1CAB5F7"
             {
-            "SourcePath" = "8:..\\SteemMediaPlayer\\bin\\Release\\net8.0-windows\\SteemMediaPlayer.pdb"
-            "TargetName" = "8:SteemMediaPlayer.pdb"
+            "SourcePath" = "8:..\\LocalMediaPlayer\\bin\\Release\\net8.0-windows\\show3.png"
+            "TargetName" = "8:show3.png"
             "Tag" = "8:"
-            "Folder" = "8:_AD89AFE25C08415A9DF3D97A04A59D60"
+            "Folder" = "8:_8B2F989A1E5744B1AD64505C7D1F3108"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -243,23 +339,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4465C1A50F744AC0897DC0EB371A6CF6"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7CB0D72BF88647DBA3862ED86F64FD8D"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-                "ScatterAssemblies"
-                {
-                    "_4465C1A50F744AC0897DC0EB371A6CF6"
-                    {
-                    "Name" = "8:System.Xaml.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Xaml.dll"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\LocalMediaPlayer\\bin\\Release\\net8.0-windows\\AboutView.html"
+            "TargetName" = "8:AboutView.html"
             "Tag" = "8:"
-            "Folder" = "8:_AD89AFE25C08415A9DF3D97A04A59D60"
+            "Folder" = "8:_8B2F989A1E5744B1AD64505C7D1F3108"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -274,23 +359,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4EDF58D90AF543998021891449A26C0A"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_87305D25C1A4472AB0B382EF8A022642"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-                "ScatterAssemblies"
-                {
-                    "_4EDF58D90AF543998021891449A26C0A"
-                    {
-                    "Name" = "8:System.Xml.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Xml.dll"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\LocalMediaPlayer\\bin\\Release\\net8.0-windows\\Right.png"
+            "TargetName" = "8:Right.png"
             "Tag" = "8:"
-            "Folder" = "8:_AD89AFE25C08415A9DF3D97A04A59D60"
+            "Folder" = "8:_8B2F989A1E5744B1AD64505C7D1F3108"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -305,23 +379,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8234061B5A4A41AD82F1D0401CCCE271"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8F6F6C6402AB467BAE24B611233865C7"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:SteemMediaPlayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_8234061B5A4A41AD82F1D0401CCCE271"
-                    {
-                    "Name" = "8:SteemMediaPlayer.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:..\\SteemMediaPlayer\\bin\\Release\\net8.0-windows\\SteemMediaPlayer.dll"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\LocalMediaPlayer\\bin\\Release\\net8.0-windows\\Left.png"
+            "TargetName" = "8:Left.png"
             "Tag" = "8:"
-            "Folder" = "8:_AD89AFE25C08415A9DF3D97A04A59D60"
+            "Folder" = "8:_8B2F989A1E5744B1AD64505C7D1F3108"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -336,12 +399,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9FCEA8DCAC9741E5A8256DC2C3665728"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_943CEAE707864E4AA787146E19FD53D8"
             {
-            "SourcePath" = "8:..\\SteemMediaPlayer\\bin\\Release\\net8.0-windows\\SteemMediaPlayer.exe"
-            "TargetName" = "8:SteemMediaPlayer.exe"
+            "SourcePath" = "8:..\\LocalMediaPlayer\\bin\\Release\\net8.0-windows\\show4.png"
+            "TargetName" = "8:show4.png"
             "Tag" = "8:"
-            "Folder" = "8:_AD89AFE25C08415A9DF3D97A04A59D60"
+            "Folder" = "8:_8B2F989A1E5744B1AD64505C7D1F3108"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -356,23 +419,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_DA6E7F288E4F40AE90A40104124EDEAE"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A5A09D1D38B9486F99ACF8CE30B89DC5"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Windows, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
-                "ScatterAssemblies"
-                {
-                    "_DA6E7F288E4F40AE90A40104124EDEAE"
-                    {
-                    "Name" = "8:System.Windows.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Windows.dll"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\LocalMediaPlayer\\bin\\Release\\net8.0-windows\\LocalMediaPlayer.pdb"
+            "TargetName" = "8:LocalMediaPlayer.pdb"
             "Tag" = "8:"
-            "Folder" = "8:_AD89AFE25C08415A9DF3D97A04A59D60"
+            "Folder" = "8:_8B2F989A1E5744B1AD64505C7D1F3108"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -387,23 +439,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E13C732DA0F1436582A716DACC0DD59A"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B7720C78C6604CD08B7E03D4C7CBB015"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
-                "ScatterAssemblies"
-                {
-                    "_E13C732DA0F1436582A716DACC0DD59A"
-                    {
-                    "Name" = "8:Microsoft.CSharp.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\Microsoft.CSharp.dll"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\LocalMediaPlayer\\bin\\Release\\net8.0-windows\\show2.png"
+            "TargetName" = "8:show2.png"
             "Tag" = "8:"
-            "Folder" = "8:_AD89AFE25C08415A9DF3D97A04A59D60"
+            "Folder" = "8:_8B2F989A1E5744B1AD64505C7D1F3108"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -418,12 +459,32 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F2806B6A12C747EAAA30142DC4CA7498"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D18AB578610842A9867FB52609C44FEB"
             {
-            "SourcePath" = "8:..\\SteemMediaPlayer\\bin\\Release\\net8.0-windows\\SteemMediaPlayer.deps.json"
-            "TargetName" = "8:SteemMediaPlayer.deps.json"
+            "SourcePath" = "8:..\\LocalMediaPlayer\\bin\\Release\\net8.0-windows\\LocalMediaPlayer.ico"
+            "TargetName" = "8:LocalMediaPlayer.ico"
             "Tag" = "8:"
-            "Folder" = "8:_AD89AFE25C08415A9DF3D97A04A59D60"
+            "Folder" = "8:_8B2F989A1E5744B1AD64505C7D1F3108"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D4F51C5742104CF29A462DD8DA7C7299"
+            {
+            "SourcePath" = "8:..\\LocalMediaPlayer\\bin\\Release\\net8.0-windows\\LocalMediaPlayer.deps.json"
+            "TargetName" = "8:LocalMediaPlayer.deps.json"
+            "Tag" = "8:"
+            "Folder" = "8:_8B2F989A1E5744B1AD64505C7D1F3108"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -444,18 +505,7 @@
         }
         "Folder"
         {
-            "{1525181F-901A-416C-8A58-119130FE478E}:_950FE6CF0B02454AB75E633F71F9934E"
-            {
-            "Name" = "8:#1916"
-            "AlwaysCreate" = "11:FALSE"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Property" = "8:DesktopFolder"
-                "Folders"
-                {
-                }
-            }
-            "{3C67513D-01DD-4637-8A68-80971EB9504F}:_AD89AFE25C08415A9DF3D97A04A59D60"
+            "{3C67513D-01DD-4637-8A68-80971EB9504F}:_8B2F989A1E5744B1AD64505C7D1F3108"
             {
             "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
@@ -467,7 +517,18 @@
                 {
                 }
             }
-            "{1525181F-901A-416C-8A58-119130FE478E}:_AF4024A7EEAA4D9E81B512064AE43E47"
+            "{1525181F-901A-416C-8A58-119130FE478E}:_D6A4070FFBB442FBBAE2982964BA252B"
+            {
+            "Name" = "8:#1916"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:DesktopFolder"
+                "Folders"
+                {
+                }
+            }
+            "{1525181F-901A-416C-8A58-119130FE478E}:_FD87E91AE56E4FEA83324CD6E26EC73D"
             {
             "Name" = "8:#1919"
             "AlwaysCreate" = "11:FALSE"
@@ -476,6 +537,17 @@
             "Property" = "8:ProgramMenuFolder"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_9BDF95765FAD4AF58C003016B80A0BB3"
+                    {
+                    "Name" = "8:Jiang Xinghua"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_65D6EF63FA4E4905BDAAAB9A1FD0D188"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
         }
@@ -493,24 +565,24 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:SetupSteemMediaPlayerProject"
-        "ProductCode" = "8:{A561942F-FEDB-4664-AC08-44BE72190584}"
-        "PackageCode" = "8:{321CDB43-61D7-4989-B160-0FAA5ED7DD48}"
-        "UpgradeCode" = "8:{FB4E7CF8-46AA-47F9-B113-288AC613D2C1}"
-        "AspNetVersion" = "8:"
+        "ProductName" = "8:LocalMediaPlayer"
+        "ProductCode" = "8:{2B019D19-6672-400B-AC1C-B4F64F48123E}"
+        "PackageCode" = "8:{820E0EE9-8641-4A16-B5AB-8FB30424062A}"
+        "UpgradeCode" = "8:{DB8389E5-9E2A-4AC2-AEA5-F29D0BE88668}"
+        "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:Default Company Name"
+        "Manufacturer" = "8:Jiang Xinghua"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:SetupSteemMediaPlayerProject"
+        "Title" = "8:SetupLocalMediaPlayer"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:Default Company Name"
+        "ARPCONTACT" = "8:Jiang Xinghua"
         "Keywords" = "8:"
-        "ARPCOMMENTS" = "8:"
+        "ARPCOMMENTS" = "8:LocalMediaPlayer本地媒体播放器"
         "ARPURLINFOABOUT" = "8:"
         "ARPPRODUCTICON" = "8:"
         "ARPIconIndex" = "3:0"
@@ -527,7 +599,7 @@
             {
                 "Keys"
                 {
-                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_62B943F55D194BBCA2F25C932F7024F7"
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_D48B11C987484EC3A9945FDD9BD3FA1F"
                     {
                     "Name" = "8:Software"
                     "Condition" = "8:"
@@ -536,7 +608,7 @@
                     "Transitive" = "11:FALSE"
                         "Keys"
                         {
-                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_3DBFEB0B1ADF42D881B111303B4D93AF"
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_8AE58168194444D99FFA3576AEB80E2A"
                             {
                             "Name" = "8:[Manufacturer]"
                             "Condition" = "8:"
@@ -561,7 +633,7 @@
             {
                 "Keys"
                 {
-                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_69B77437C2C14FC9B564BEEC15B6398C"
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_0BD924844BC24A8AA4AEF802E5D6827B"
                     {
                     "Name" = "8:Software"
                     "Condition" = "8:"
@@ -570,7 +642,7 @@
                     "Transitive" = "11:FALSE"
                         "Keys"
                         {
-                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_8B91DF3796D84F848D6DE692C95CE6E7"
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_93107C90DE7041518107B37135B54F7A"
                             {
                             "Name" = "8:[Manufacturer]"
                             "Condition" = "8:"
@@ -615,57 +687,57 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_13E65CA56787456B8917E6EFA43708A6"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_5AC1C19FF2CF4811B2AF0F4F346F2D67"
             {
-            "Name" = "8:流媒体播放器"
+            "Name" = "8:LocalMediaPlayer"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_9FCEA8DCAC9741E5A8256DC2C3665728"
-            "Folder" = "8:_AF4024A7EEAA4D9E81B512064AE43E47"
-            "WorkingFolder" = "8:_AD89AFE25C08415A9DF3D97A04A59D60"
-            "Icon" = "8:"
+            "Target" = "8:_22D95C89170046A095D9C2999FD1A6FA"
+            "Folder" = "8:_9BDF95765FAD4AF58C003016B80A0BB3"
+            "WorkingFolder" = "8:_8B2F989A1E5744B1AD64505C7D1F3108"
+            "Icon" = "8:_D18AB578610842A9867FB52609C44FEB"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_4E7ABA0ED59B4681920B553E0492FFE8"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_68A1A09990294F33897DD0AD122443DC"
             {
-            "Name" = "8:流媒体播放器"
+            "Name" = "8:LocalMediaPlayer"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_9FCEA8DCAC9741E5A8256DC2C3665728"
-            "Folder" = "8:_950FE6CF0B02454AB75E633F71F9934E"
-            "WorkingFolder" = "8:_AD89AFE25C08415A9DF3D97A04A59D60"
-            "Icon" = "8:"
+            "Target" = "8:_22D95C89170046A095D9C2999FD1A6FA"
+            "Folder" = "8:_D6A4070FFBB442FBBAE2982964BA252B"
+            "WorkingFolder" = "8:_8B2F989A1E5744B1AD64505C7D1F3108"
+            "Icon" = "8:_D18AB578610842A9867FB52609C44FEB"
             "Feature" = "8:"
             }
         }
         "UserInterface"
         {
-            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_0E99D12E21E742AF831AAEEC9C21B12B"
+            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_4391C9FF573A445F891B9585DADBDB83"
             {
             "UseDynamicProperties" = "11:FALSE"
             "IsDependency" = "11:FALSE"
             "SourcePath" = "8:<VsdDialogDir>\\VsdUserInterface.wim"
             }
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_5F119CADEF5A42C68546F3D67530F629"
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_4F39D6B2D3644567BF3C47CA901A5B06"
             {
-            "Name" = "8:#1901"
-            "Sequence" = "3:1"
-            "Attributes" = "3:2"
+            "Name" = "8:#1902"
+            "Sequence" = "3:2"
+            "Attributes" = "3:3"
                 "Dialogs"
                 {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_45BB3D06F8FA4C82BC1ED3A8F1CC5CBF"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_58F71BE2201B405083BE21093314A188"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:进度"
+                    "DisplayName" = "8:已完成"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdProgressDlg.wid"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFinishedDlg.wid"
                         "Properties"
                         {
                             "BannerBitmap"
@@ -679,11 +751,48 @@
                             "Setting" = "3:1"
                             "UsePlugInResources" = "11:TRUE"
                             }
-                            "ShowProgress"
+                        }
+                    }
+                }
+            }
+            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_5928865BA69042E0BF14206C6BC0C5A6"
+            {
+            "UseDynamicProperties" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "SourcePath" = "8:<VsdDialogDir>\\VsdBasicDialogs.wim"
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_9ECCBB5F24E841AC996CFC0757DA7B0B"
+            {
+            "Name" = "8:#1900"
+            "Sequence" = "3:1"
+            "Attributes" = "3:1"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_326EE11C2E97406CB713BF24FE8689C1"
+                    {
+                    "Sequence" = "3:200"
+                    "DisplayName" = "8:安装文件夹"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdFolderDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
                             {
-                            "Name" = "8:ShowProgress"
-                            "DisplayName" = "8:#1009"
-                            "Description" = "8:#1109"
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "InstallAllUsersVisible"
+                            {
+                            "Name" = "8:InstallAllUsersVisible"
+                            "DisplayName" = "8:#1059"
+                            "Description" = "8:#1159"
                             "Type" = "3:5"
                             "ContextData" = "8:1;True=1;False=0"
                             "Attributes" = "3:0"
@@ -694,22 +803,13 @@
                             }
                         }
                     }
-                }
-            }
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_657805286FC34325AD405058BC440734"
-            {
-            "Name" = "8:#1900"
-            "Sequence" = "3:2"
-            "Attributes" = "3:1"
-                "Dialogs"
-                {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_399463A6B6524CB0958528937A4D515C"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_6AB01DF420C94936AD1DB093E7AB5555"
                     {
-                    "Sequence" = "3:200"
-                    "DisplayName" = "8:安装文件夹"
+                    "Sequence" = "3:300"
+                    "DisplayName" = "8:确认安装"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFolderDlg.wid"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdConfirmDlg.wid"
                         "Properties"
                         {
                             "BannerBitmap"
@@ -725,7 +825,64 @@
                             }
                         }
                     }
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_793A17E1DCEE497888D75A261DF7163C"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_79228EAE21344CAFB33B73F196D855AE"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:欢迎使用"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdWelcomeDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "CopyrightWarning"
+                            {
+                            "Name" = "8:CopyrightWarning"
+                            "DisplayName" = "8:#1002"
+                            "Description" = "8:#1102"
+                            "Type" = "3:3"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1202"
+                            "DefaultValue" = "8:#1202"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "Welcome"
+                            {
+                            "Name" = "8:Welcome"
+                            "DisplayName" = "8:#1003"
+                            "Description" = "8:#1103"
+                            "Type" = "3:3"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1203"
+                            "DefaultValue" = "8:#1203"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_A1DD29A77530473B8A1E9057CE0C3FDD"
+            {
+            "Name" = "8:#1900"
+            "Sequence" = "3:2"
+            "Attributes" = "3:1"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_058C9DFFA9DB4708BA4E8277E4DC8D04"
                     {
                     "Sequence" = "3:300"
                     "DisplayName" = "8:确认安装"
@@ -747,7 +904,29 @@
                             }
                         }
                     }
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_80FFB51BEFFA4BC3BC5D65B5C00C025B"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_8274CA66395D496486366C580E9555A8"
+                    {
+                    "Sequence" = "3:200"
+                    "DisplayName" = "8:安装文件夹"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFolderDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_8EC25A2CE34D48928F918B6E4F3CC892"
                     {
                     "Sequence" = "3:100"
                     "DisplayName" = "8:欢迎使用"
@@ -797,20 +976,58 @@
                     }
                 }
             }
-            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_72CA9B22657A4F05B3D93C2CE77BFD4F"
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_A37C0D0351CA49248EE11B11A1F4EE60"
             {
-            "UseDynamicProperties" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "SourcePath" = "8:<VsdDialogDir>\\VsdBasicDialogs.wim"
+            "Name" = "8:#1901"
+            "Sequence" = "3:1"
+            "Attributes" = "3:2"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_CE3139354DA34663AC4B4743A885D10E"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:进度"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdProgressDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "ShowProgress"
+                            {
+                            "Name" = "8:ShowProgress"
+                            "DisplayName" = "8:#1009"
+                            "Description" = "8:#1109"
+                            "Type" = "3:5"
+                            "ContextData" = "8:1;True=1;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:1"
+                            "DefaultValue" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
             }
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_7FA98E0C3C994E5FB524E659AA6C626D"
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_BBB1D83F56844A75B9C6D987E768623D"
             {
             "Name" = "8:#1902"
             "Sequence" = "3:1"
             "Attributes" = "3:3"
                 "Dialogs"
                 {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_E7C0C4027E8043D991DE21EF521E2428"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_F01BB6EE0B5D4FDAB58BEB60A11E22C9"
                     {
                     "Sequence" = "3:100"
                     "DisplayName" = "8:已完成"
@@ -847,159 +1064,14 @@
                     }
                 }
             }
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_9E96E8C5A0584DDDA108ADB003C54E6F"
-            {
-            "Name" = "8:#1902"
-            "Sequence" = "3:2"
-            "Attributes" = "3:3"
-                "Dialogs"
-                {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_0D12348B1DC64FE498EB6EEEC4D348EE"
-                    {
-                    "Sequence" = "3:100"
-                    "DisplayName" = "8:已完成"
-                    "UseDynamicProperties" = "11:TRUE"
-                    "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFinishedDlg.wid"
-                        "Properties"
-                        {
-                            "BannerBitmap"
-                            {
-                            "Name" = "8:BannerBitmap"
-                            "DisplayName" = "8:#1001"
-                            "Description" = "8:#1101"
-                            "Type" = "3:8"
-                            "ContextData" = "8:Bitmap"
-                            "Attributes" = "3:4"
-                            "Setting" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                        }
-                    }
-                }
-            }
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_B92EEE4FDDD74DADB77042BAE089C774"
-            {
-            "Name" = "8:#1900"
-            "Sequence" = "3:1"
-            "Attributes" = "3:1"
-                "Dialogs"
-                {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_4C86FE9B1C1C4B3599A6EE4753F6D5A8"
-                    {
-                    "Sequence" = "3:100"
-                    "DisplayName" = "8:欢迎使用"
-                    "UseDynamicProperties" = "11:TRUE"
-                    "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdWelcomeDlg.wid"
-                        "Properties"
-                        {
-                            "BannerBitmap"
-                            {
-                            "Name" = "8:BannerBitmap"
-                            "DisplayName" = "8:#1001"
-                            "Description" = "8:#1101"
-                            "Type" = "3:8"
-                            "ContextData" = "8:Bitmap"
-                            "Attributes" = "3:4"
-                            "Setting" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                            "CopyrightWarning"
-                            {
-                            "Name" = "8:CopyrightWarning"
-                            "DisplayName" = "8:#1002"
-                            "Description" = "8:#1102"
-                            "Type" = "3:3"
-                            "ContextData" = "8:"
-                            "Attributes" = "3:0"
-                            "Setting" = "3:1"
-                            "Value" = "8:#1202"
-                            "DefaultValue" = "8:#1202"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                            "Welcome"
-                            {
-                            "Name" = "8:Welcome"
-                            "DisplayName" = "8:#1003"
-                            "Description" = "8:#1103"
-                            "Type" = "3:3"
-                            "ContextData" = "8:"
-                            "Attributes" = "3:0"
-                            "Setting" = "3:1"
-                            "Value" = "8:#1203"
-                            "DefaultValue" = "8:#1203"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                        }
-                    }
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_C05B66DA26A848F7810257ECE079A002"
-                    {
-                    "Sequence" = "3:200"
-                    "DisplayName" = "8:安装文件夹"
-                    "UseDynamicProperties" = "11:TRUE"
-                    "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdFolderDlg.wid"
-                        "Properties"
-                        {
-                            "BannerBitmap"
-                            {
-                            "Name" = "8:BannerBitmap"
-                            "DisplayName" = "8:#1001"
-                            "Description" = "8:#1101"
-                            "Type" = "3:8"
-                            "ContextData" = "8:Bitmap"
-                            "Attributes" = "3:4"
-                            "Setting" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                            "InstallAllUsersVisible"
-                            {
-                            "Name" = "8:InstallAllUsersVisible"
-                            "DisplayName" = "8:#1059"
-                            "Description" = "8:#1159"
-                            "Type" = "3:5"
-                            "ContextData" = "8:1;True=1;False=0"
-                            "Attributes" = "3:0"
-                            "Setting" = "3:0"
-                            "Value" = "3:1"
-                            "DefaultValue" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                        }
-                    }
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_C1413F143E3F402B8E7ABF755F0EEA85"
-                    {
-                    "Sequence" = "3:300"
-                    "DisplayName" = "8:确认安装"
-                    "UseDynamicProperties" = "11:TRUE"
-                    "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdConfirmDlg.wid"
-                        "Properties"
-                        {
-                            "BannerBitmap"
-                            {
-                            "Name" = "8:BannerBitmap"
-                            "DisplayName" = "8:#1001"
-                            "Description" = "8:#1101"
-                            "Type" = "3:8"
-                            "ContextData" = "8:Bitmap"
-                            "Attributes" = "3:4"
-                            "Setting" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                        }
-                    }
-                }
-            }
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_BA3693FA852E4995AC639A8C95140982"
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_D051691A7D534F8894C0B3AC723D0B82"
             {
             "Name" = "8:#1901"
             "Sequence" = "3:2"
             "Attributes" = "3:2"
                 "Dialogs"
                 {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_27851D3922C8471B82589D9CD1849C4C"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_98A1690F8C1D4030AF8DA1EBA239CC24"
                     {
                     "Sequence" = "3:100"
                     "DisplayName" = "8:进度"
@@ -1042,6 +1114,34 @@
         }
         "ProjectOutput"
         {
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_A2DB3879C0414FEA8291B9909A3625B0"
+            {
+            "SourcePath" = "8:..\\LocalMediaPlayer\\obj\\Release\\net8.0-windows\\apphost.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_8B2F989A1E5744B1AD64505C7D1F3108"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:Release|Any CPU"
+            "OutputGroupCanonicalName" = "8:PublishItems"
+            "OutputProjectGuid" = "8:{5154999C-E685-44D2-ACBB-0F3766A068CD}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
         }
     }
 }

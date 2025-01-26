@@ -51,7 +51,7 @@
             <td>包含PlayCtrl类的定义，对应PlayCtrl.xaml文件</td>
         </tr>
         <tr>
-            <td>PlayListData.xml</td>
+            <td>AppData.xml</td>
             <td>包含播放列表的数据，用于PlayListPage</td>
         </tr>
         <tr>
