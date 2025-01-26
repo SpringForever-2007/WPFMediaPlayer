@@ -63,8 +63,4 @@
             <td>包含PlayListPage类的定义，对应PlayListPage.xaml文件，用于MainWindow</td>
         </tr>
     </table>
-    <h2>应用流程</h2>
-    <p>
-
-    </p>
 </body>
